@@ -31,11 +31,11 @@ HEADERS += \
         mainwindow.h
 
 win32 {
-INCLUDEPATH += ..\..\Libraries\opencv_2.4.13.2\build_John_noGPU\include
+INCLUDEPATH += ../opencv_2.4.13.2/build_John_noGPU/include
 
-LIBS += ..\..\Libraries\opencv_2.4.13.2\build_John_noGPU\lib\Release\opencv_highgui2413.lib \
-        ..\..\Libraries\opencv_2.4.13.2\build_John_noGPU\lib\Release\opencv_imgproc2413.lib \
-        ..\..\Libraries\opencv_2.4.13.2\build_John_noGPU\lib\Release\opencv_core2413.lib
+LIBS += ../opencv_2.4.13.2/build_John_noGPU/lib/Release/opencv_highgui2413.lib \
+        ../opencv_2.4.13.2/build_John_noGPU/lib/Release/opencv_imgproc2413.lib \
+        ../opencv_2.4.13.2/build_John_noGPU/lib/Release/opencv_core2413.lib
 } mac {
    QMAKE_LFLAGS += -F/Applications/Xcode_6.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/
    LIBS += -framework CoreMedia -framework CoreVideo -framework AVFoundation -framework Cocoa
@@ -43,7 +43,7 @@ LIBS += ..\..\Libraries\opencv_2.4.13.2\build_John_noGPU\lib\Release\opencv_high
 #   LIBS += -framework AVFoundation
 #   LIBS += -framework Cocoa
 
-   INCLUDEPATH += /Data/opencv_2.4.13.2/build_John_unix_static/include
+   INCLUDEPATH += ../opencv_2.4.13.2/build_John_unix_static/include
    LIBS += /usr/local/lib/libopencv_core.a \
        /usr/local/lib/libopencv_highgui.a \
        /usr/local/lib/libopencv_imgproc.a \

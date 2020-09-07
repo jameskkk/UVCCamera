@@ -9,7 +9,7 @@
 #include <QScreen>
 
 #ifdef _WIN32
-#include <windows.h>
+#include <Windows.h>
 #endif
 
 
@@ -19,11 +19,13 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    #ifdef _WIN32
-    if (AllocConsole()) {
-        qDebug() << "AllocConsole()...";
-        freopen("CONOUT$", "w", stdout);
-    }
+    #ifdef QT_DEBUG
+        #ifdef _WIN32
+        if (AllocConsole()) {
+            qDebug() << "AllocConsole()...";
+            freopen("CONOUT$", "w", stdout);
+        }
+        #endif
     #endif
 
     QScreen *screen = QGuiApplication::primaryScreen();
@@ -106,7 +108,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->comboBoxFPS2->insertItem(2, tr("15 fps"));
     ui->comboBoxFPS2->setCurrentIndex(2);
 
-    cam     = NULL;
+    cam     = nullptr;
     timer   = new QTimer(this);
     imag    = new QImage();
 
@@ -115,7 +117,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->btnCapture, SIGNAL(clicked()), this, SLOT(takingPictures()));
     connect(ui->btnStop, SIGNAL(clicked()), this, SLOT(closeCamara()));
 
-    cam2     = NULL;
+    cam2     = nullptr;
     timer2   = new QTimer(this);
     imag2    = new QImage();
 
@@ -134,23 +136,23 @@ MainWindow::~MainWindow()
     #endif
 
     closeCamara();
-    if (timer != NULL) {
+    if (timer != nullptr) {
         delete timer;
-        timer = NULL;
+        timer = nullptr;
     }
-    if (imag != NULL) {
+    if (imag != nullptr) {
         delete imag;
-        imag = NULL;
+        imag = nullptr;
     }
 
     closeCamara2();
-    if (timer2 != NULL) {
+    if (timer2 != nullptr) {
         delete timer2;
-        timer2 = NULL;
+        timer2 = nullptr;
     }
-    if (imag2 != NULL) {
+    if (imag2 != nullptr) {
         delete imag2;
-        imag2 = NULL;
+        imag2 = nullptr;
     }
 
     delete ui;
@@ -237,11 +239,11 @@ void MainWindow::readFrame()
 //        cvSetCaptureProperty(cam, CV_CAP_PROP_FPS, 5);
 //    }
 
-    if (frame != NULL) {
+    if (frame != nullptr) {
         IplImage *buffer = cvCreateImage(cvGetSize(frame), 8, 3);
 
         cvCvtColor(frame, buffer, CV_BGR2RGB);
-        QImage image((const uchar*)buffer->imageData, buffer->width, buffer->height, QImage::Format_RGB888);
+        QImage image(reinterpret_cast<const uchar*>(buffer->imageData), buffer->width, buffer->height, QImage::Format_RGB888);
         QImage smallImage = image.scaled(ui->lblImageView->width(), ui->lblImageView->height(), Qt::KeepAspectRatio);
         ui->lblImageView->setPixmap(QPixmap::fromImage(smallImage));
         cvReleaseImage(&buffer);
@@ -271,7 +273,7 @@ void MainWindow::takingPictures()
 
     cvCvtColor(frame, buffer, CV_BGR2RGB);
 //    cvSaveImage("D:\\capture1.jpg", frame);
-    QImage image((const uchar*)buffer->imageData, buffer->width, buffer->height, QImage::Format_RGB888);
+    QImage image(reinterpret_cast<const uchar*>(buffer->imageData), buffer->width, buffer->height, QImage::Format_RGB888);
 
     const QStringList desktopLocation = QStandardPaths::standardLocations(QStandardPaths::DesktopLocation);
     QString desktopLPath = QString("%1").arg(desktopLocation.first());
@@ -286,10 +288,10 @@ void MainWindow::takingPictures()
 
 void MainWindow::closeCamara()
 {
-    if (timer != NULL)
+    if (timer != nullptr)
         timer->stop();
 
-    if (cam != NULL)
+    if (cam != nullptr)
         cvReleaseCapture(&cam);
 }
 
@@ -297,7 +299,7 @@ void MainWindow::on_btnSettings_clicked()
 {
     int cameraId = ui->comboBoxCam->currentIndex();
     qDebug() << "cameraId = " << cameraId;
-    if (cam != NULL)
+    if (cam != nullptr)
         cvSetCaptureProperty(cam, CV_CAP_PROP_SETTINGS, 0);
     else
         QMessageBox::critical(this, tr("Error"), tr("Camera 1 is not opened!"));
@@ -370,11 +372,11 @@ void MainWindow::readFrame2()
 //        cvSetCaptureProperty(cam2, CV_CAP_PROP_FPS, 5);
 //    }
 
-    if (frame2 != NULL) {
+    if (frame2 != nullptr) {
         IplImage *buffer = cvCreateImage(cvGetSize(frame2), 8, 3);
 
         cvCvtColor(frame2, buffer, CV_BGR2RGB);
-        QImage image((const uchar*)buffer->imageData, buffer->width, buffer->height, QImage::Format_RGB888);
+        QImage image(reinterpret_cast<const uchar*>(buffer->imageData), buffer->width, buffer->height, QImage::Format_RGB888);
         QImage smallImage = image.scaled(ui->lblImageView2->width(), ui->lblImageView2->height(), Qt::KeepAspectRatio);
         ui->lblImageView2->setPixmap(QPixmap::fromImage(smallImage));
         cvReleaseImage(&buffer);
@@ -404,7 +406,7 @@ void MainWindow::takingPictures2()
 
     cvCvtColor(frame2, buffer, CV_BGR2RGB);
 //    cvSaveImage("D:\\capture2.jpg", frame);
-    QImage image((const uchar*)buffer->imageData, buffer->width, buffer->height, QImage::Format_RGB888);
+    QImage image(reinterpret_cast<const uchar*>(buffer->imageData), buffer->width, buffer->height, QImage::Format_RGB888);
 
     const QStringList desktopLocation = QStandardPaths::standardLocations(QStandardPaths::DesktopLocation);
     QString desktopLPath = QString("%1").arg(desktopLocation.first());
@@ -419,10 +421,10 @@ void MainWindow::takingPictures2()
 
 void MainWindow::closeCamara2()
 {
-    if (timer2 != NULL)
+    if (timer2 != nullptr)
         timer2->stop();
 
-    if (cam2 != NULL)
+    if (cam2 != nullptr)
         cvReleaseCapture(&cam2);
 }
 
@@ -430,7 +432,7 @@ void MainWindow::on_btnSettings2_clicked()
 {
     int cameraId = ui->comboBoxCam2->currentIndex();
     qDebug() << "cameraId = " << cameraId;
-    if (cam2 != NULL)
+    if (cam2 != nullptr)
         cvSetCaptureProperty(cam2, CV_CAP_PROP_SETTINGS, 0);
     else
         QMessageBox::critical(this, tr("Error"), tr("Camera 2 is not opened!"));
@@ -507,7 +509,7 @@ void MainWindow::on_btnSetCamProp_clicked()
 //    cvSetCaptureProperty(cam, CV_CAP_PROP_BRIGHTNESS, -64);
 //    cvSetCaptureProperty(cam, CV_CAP_PROP_HUE, 0);
 
-    if (cam != NULL && ui->txtPropID->toPlainText().compare("") != 0 && ui->txtPropVal->toPlainText().compare("") != 0) {
+    if (cam != nullptr && ui->txtPropID->toPlainText().compare("") != 0 && ui->txtPropVal->toPlainText().compare("") != 0) {
         cvSetCaptureProperty(cam, CameraPropString2Id(ui->txtPropID->toPlainText()), ui->txtPropVal->toPlainText().toDouble());
         qDebug() << "Camera 1 cvSetCaptureProperty() " << ui->txtPropID->toPlainText() << ", " << ui->txtPropVal->toPlainText();
     }
@@ -517,7 +519,7 @@ void MainWindow::on_btnSetCamProp_clicked()
 
 void MainWindow::on_btnSetCamProp2_clicked()
 {
-    if (cam2 != NULL && ui->txtPropID2->toPlainText().compare("") != 0 && ui->txtPropVal2->toPlainText().compare("") != 0) {
+    if (cam2 != nullptr && ui->txtPropID2->toPlainText().compare("") != 0 && ui->txtPropVal2->toPlainText().compare("") != 0) {
         cvSetCaptureProperty(cam2, CameraPropString2Id(ui->txtPropID2->toPlainText()), ui->txtPropVal2->toPlainText().toDouble());
         qDebug() << "Camera 2 cvSetCaptureProperty() " << ui->txtPropID2->toPlainText() << ", " << ui->txtPropVal2->toPlainText();
     }

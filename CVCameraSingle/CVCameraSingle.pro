@@ -30,12 +30,14 @@ SOURCES += \
 HEADERS += \
         mainwindow.h
 
-INCLUDEPATH += ..\..\Libraries\opencv_2.4.13.2\build_John_noGPU\include
+INCLUDEPATH += ../opencv_2.4.13.2/build_John_noGPU/include
 
 
-LIBS += ..\..\Libraries\opencv_2.4.13.2\build_John_noGPU\lib\Release\opencv_highgui2413.lib \
-        ..\..\Libraries\opencv_2.4.13.2\build_John_noGPU\lib\Release\opencv_imgproc2413.lib \
-        ..\..\Libraries\opencv_2.4.13.2\build_John_noGPU\lib\Release\opencv_core2413.lib
+LIBS += ../opencv_2.4.13.2/build_John_noGPU/lib/Release/opencv_highgui2413.lib \
+        ../opencv_2.4.13.2/build_John_noGPU/lib/Release/opencv_imgproc2413.lib \
+        ../opencv_2.4.13.2/build_John_noGPU/lib/Release/opencv_core2413.lib
 
 FORMS += \
         mainwindow.ui
+
+RC_FILE = icon.rc
