@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{DE1CA980-FBB1-3690-8B25-F84CB08C48AD}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>zlib</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">zlib.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">zlibd</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">zlib.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">zlib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;NO_FSEEKO;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\lib\Debug\zlibd.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;NO_FSEEKO;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;NO_FSEEKO;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\lib\Release\zlib.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;NO_FSEEKO;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/SDK/opencv_2.4.13.2/sources/3rdparty/zlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/SDK/opencv_2.4.13.2/sources -BE:/SDK/opencv_2.4.13.2/build_John_noGPU --check-stamp-file E:/SDK/opencv_2.4.13.2/build_John_noGPU/3rdparty/zlib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/SDK/opencv_2.4.13.2/sources/3rdparty/zlib/CMakeLists.txt;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFileCXX.cmake;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\zconf.h.cmakein;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\zlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/SDK/opencv_2.4.13.2/sources/3rdparty/zlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/SDK/opencv_2.4.13.2/sources -BE:/SDK/opencv_2.4.13.2/build_John_noGPU --check-stamp-file E:/SDK/opencv_2.4.13.2/build_John_noGPU/3rdparty/zlib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/SDK/opencv_2.4.13.2/sources/3rdparty/zlib/CMakeLists.txt;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFileCXX.cmake;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\zconf.h.cmakein;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\zlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\zlib\zconf.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\zlib.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\crc32.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\deflate.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\gzguts.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\inffast.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\inffixed.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\inflate.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\inftrees.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\trees.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\zutil.h" />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\adler32.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\compress.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\crc32.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\deflate.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\gzclose.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\gzlib.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\gzread.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\gzwrite.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\inflate.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\infback.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\inftrees.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\inffast.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\trees.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\uncompr.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib\zutil.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\ZERO_CHECK.vcxproj">
+      <Project>34B73CEA-8A89-3D6B-BE55-8BC9F41E3886</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

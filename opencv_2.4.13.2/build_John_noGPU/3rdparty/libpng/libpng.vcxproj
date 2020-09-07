@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{71283567-B97D-3EAE-BEC8-96F81C30EE53}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>libpng</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libpng.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libpngd</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libpng.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libpng</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;PNG_ARM_NEON_OPT=0;PNG_CONFIGURE_LIBPNG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\lib\Debug\libpngd.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;PNG_ARM_NEON_OPT=0;PNG_CONFIGURE_LIBPNG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;PNG_ARM_NEON_OPT=0;PNG_CONFIGURE_LIBPNG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\lib\Release\libpng.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;PNG_ARM_NEON_OPT=0;PNG_CONFIGURE_LIBPNG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\zlib;E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/SDK/opencv_2.4.13.2/sources/3rdparty/libpng/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/SDK/opencv_2.4.13.2/sources -BE:/SDK/opencv_2.4.13.2/build_John_noGPU --check-stamp-file E:/SDK/opencv_2.4.13.2/build_John_noGPU/3rdparty/libpng/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/SDK/opencv_2.4.13.2/sources/3rdparty/libpng/CMakeLists.txt;E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\CMakeLists.txt;E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\libpng\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/SDK/opencv_2.4.13.2/sources/3rdparty/libpng/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/SDK/opencv_2.4.13.2/sources -BE:/SDK/opencv_2.4.13.2/build_John_noGPU --check-stamp-file E:/SDK/opencv_2.4.13.2/build_John_noGPU/3rdparty/libpng/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/SDK/opencv_2.4.13.2/sources/3rdparty/libpng/CMakeLists.txt;E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\CMakeLists.txt;E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\libpng\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\png.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngconf.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngdebug.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pnginfo.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pnglibconf.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngpriv.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngstruct.h" />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\png.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngerror.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngget.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngmem.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngpread.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngread.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngrio.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngrtran.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngrutil.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngset.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngtrans.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngwio.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngwrite.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngwtran.c"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\3rdparty\libpng\pngwutil.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\ZERO_CHECK.vcxproj">
+      <Project>34B73CEA-8A89-3D6B-BE55-8BC9F41E3886</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\3rdparty\zlib\zlib.vcxproj">
+      <Project>DE1CA980-FBB1-3690-8B25-F84CB08C48AD</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

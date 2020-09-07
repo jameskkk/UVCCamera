@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\superres\src\btv_l1.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\superres\src\btv_l1_gpu.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\superres\src\btv_l1_ocl.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\superres\src\frame_source.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\superres\src\input_array_utility.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\superres\src\optical_flow.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\superres\src\super_resolution.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\superres\opencl_kernels.cpp">
+      <Filter>OpenCL</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\superres\opencv_superres_pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\modules\superres\include\opencv2\superres.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\modules\superres\include\opencv2\superres\optical_flow.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\modules\superres\include\opencv2\superres\superres.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\superres\opencl_kernels.hpp">
+      <Filter>OpenCL</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\modules\superres\src\input_array_utility.hpp">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\modules\superres\src\precomp.hpp">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\modules\superres\src\ring_buffer.hpp">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\cvconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\opencv2\opencv_modules.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\SDK\opencv_2.4.13.2\sources\modules\superres\CMakeLists.txt" />
+    <CustomBuild Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\CMakeFiles\16fae0848a6bce4323c893d5fd33dc5d\opencl_kernels.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\superres\src\opencl\superres_btvl1.cl">
+      <Filter>OpenCL</Filter>
+    </None>
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\superres\src\cuda\btv_l1_gpu.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{72D18FE9-2C9B-3E80-AD43-BC00B07441FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{BA1F9B3B-AC88-3367-8369-4A7A90DA0190}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{58435126-2461-3E86-A49C-E813A399516C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{9337EA60-DD63-3BD8-8158-EE2183B46609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenCL">
+      <UniqueIdentifier>{B57D3A09-9C00-328A-8154-10730C463BCC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{DD9B1ACD-F268-34CC-95DE-3FFAA5C81472}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

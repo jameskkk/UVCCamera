@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{FF46E9A2-9A34-3DEA-B15E-DA36BFB3CCA9}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_perf_gpu</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_perf_gpu.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_perf_gpud</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_perf_gpu.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_perf_gpu</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf;E:\SDK\opencv_2.4.13.2\sources\modules\video\include;E:\SDK\opencv_2.4.13.2\sources\modules\calib3d\include;E:\SDK\opencv_2.4.13.2\sources\modules\features2d\include;E:\SDK\opencv_2.4.13.2\sources\modules\highgui\include;E:\SDK\opencv_2.4.13.2\sources\modules\imgproc\include;E:\SDK\opencv_2.4.13.2\sources\modules\flann\include;E:\SDK\opencv_2.4.13.2\sources\modules\core\include;E:\SDK\opencv_2.4.13.2\sources\modules\ts\include;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\include;E:\SDK\opencv_2.4.13.2\sources\modules\photo\include;E:\SDK\opencv_2.4.13.2\sources\modules\objdetect\include;E:\SDK\opencv_2.4.13.2\sources\modules\legacy\include;E:\SDK\opencv_2.4.13.2\sources\modules\ml\include;E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\gpu;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\src;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\test;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\src\cuda;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;4589;4359</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ForcedIncludeFiles>E:/SDK/opencv_2.4.13.2/sources/modules/gpu/perf/perf_precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>E:/SDK/opencv_2.4.13.2/sources/modules/gpu/perf/perf_precomp.hpp</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf;E:\SDK\opencv_2.4.13.2\sources\modules\video\include;E:\SDK\opencv_2.4.13.2\sources\modules\calib3d\include;E:\SDK\opencv_2.4.13.2\sources\modules\features2d\include;E:\SDK\opencv_2.4.13.2\sources\modules\highgui\include;E:\SDK\opencv_2.4.13.2\sources\modules\imgproc\include;E:\SDK\opencv_2.4.13.2\sources\modules\flann\include;E:\SDK\opencv_2.4.13.2\sources\modules\core\include;E:\SDK\opencv_2.4.13.2\sources\modules\ts\include;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\include;E:\SDK\opencv_2.4.13.2\sources\modules\photo\include;E:\SDK\opencv_2.4.13.2\sources\modules\objdetect\include;E:\SDK\opencv_2.4.13.2\sources\modules\legacy\include;E:\SDK\opencv_2.4.13.2\sources\modules\ml\include;E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\gpu;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\src;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\test;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\src\cuda;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf;E:\SDK\opencv_2.4.13.2\sources\modules\video\include;E:\SDK\opencv_2.4.13.2\sources\modules\calib3d\include;E:\SDK\opencv_2.4.13.2\sources\modules\features2d\include;E:\SDK\opencv_2.4.13.2\sources\modules\highgui\include;E:\SDK\opencv_2.4.13.2\sources\modules\imgproc\include;E:\SDK\opencv_2.4.13.2\sources\modules\flann\include;E:\SDK\opencv_2.4.13.2\sources\modules\core\include;E:\SDK\opencv_2.4.13.2\sources\modules\ts\include;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\include;E:\SDK\opencv_2.4.13.2\sources\modules\photo\include;E:\SDK\opencv_2.4.13.2\sources\modules\objdetect\include;E:\SDK\opencv_2.4.13.2\sources\modules\legacy\include;E:\SDK\opencv_2.4.13.2\sources\modules\ml\include;E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\gpu;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\src;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\test;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\src\cuda;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Debug\opencv_gpu2413d.lib;..\..\lib\Debug\opencv_ts2413d.lib;..\..\lib\Debug\opencv_legacy2413d.lib;..\..\lib\Debug\opencv_ml2413d.lib;..\..\lib\Debug\opencv_objdetect2413d.lib;..\..\lib\Debug\opencv_photo2413d.lib;..\..\lib\Debug\opencv_calib3d2413d.lib;..\..\lib\Debug\opencv_features2d2413d.lib;..\..\lib\Debug\opencv_flann2413d.lib;..\..\lib\Debug\opencv_highgui2413d.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;..\..\lib\Debug\opencv_video2413d.lib;..\..\lib\Debug\opencv_imgproc2413d.lib;..\..\lib\Debug\opencv_core2413d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/SDK/opencv_2.4.13.2/build_John_noGPU/bin/Debug/opencv_perf_gpud.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/SDK/opencv_2.4.13.2/build_John_noGPU/bin/Debug/opencv_perf_gpud.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf;E:\SDK\opencv_2.4.13.2\sources\modules\video\include;E:\SDK\opencv_2.4.13.2\sources\modules\calib3d\include;E:\SDK\opencv_2.4.13.2\sources\modules\features2d\include;E:\SDK\opencv_2.4.13.2\sources\modules\highgui\include;E:\SDK\opencv_2.4.13.2\sources\modules\imgproc\include;E:\SDK\opencv_2.4.13.2\sources\modules\flann\include;E:\SDK\opencv_2.4.13.2\sources\modules\core\include;E:\SDK\opencv_2.4.13.2\sources\modules\ts\include;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\include;E:\SDK\opencv_2.4.13.2\sources\modules\photo\include;E:\SDK\opencv_2.4.13.2\sources\modules\objdetect\include;E:\SDK\opencv_2.4.13.2\sources\modules\legacy\include;E:\SDK\opencv_2.4.13.2\sources\modules\ml\include;E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\gpu;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\src;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\test;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\src\cuda;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;4589;4359</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ForcedIncludeFiles>E:/SDK/opencv_2.4.13.2/sources/modules/gpu/perf/perf_precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>E:/SDK/opencv_2.4.13.2/sources/modules/gpu/perf/perf_precomp.hpp</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf;E:\SDK\opencv_2.4.13.2\sources\modules\video\include;E:\SDK\opencv_2.4.13.2\sources\modules\calib3d\include;E:\SDK\opencv_2.4.13.2\sources\modules\features2d\include;E:\SDK\opencv_2.4.13.2\sources\modules\highgui\include;E:\SDK\opencv_2.4.13.2\sources\modules\imgproc\include;E:\SDK\opencv_2.4.13.2\sources\modules\flann\include;E:\SDK\opencv_2.4.13.2\sources\modules\core\include;E:\SDK\opencv_2.4.13.2\sources\modules\ts\include;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\include;E:\SDK\opencv_2.4.13.2\sources\modules\photo\include;E:\SDK\opencv_2.4.13.2\sources\modules\objdetect\include;E:\SDK\opencv_2.4.13.2\sources\modules\legacy\include;E:\SDK\opencv_2.4.13.2\sources\modules\ml\include;E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\gpu;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\src;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\test;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\src\cuda;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf;E:\SDK\opencv_2.4.13.2\sources\modules\video\include;E:\SDK\opencv_2.4.13.2\sources\modules\calib3d\include;E:\SDK\opencv_2.4.13.2\sources\modules\features2d\include;E:\SDK\opencv_2.4.13.2\sources\modules\highgui\include;E:\SDK\opencv_2.4.13.2\sources\modules\imgproc\include;E:\SDK\opencv_2.4.13.2\sources\modules\flann\include;E:\SDK\opencv_2.4.13.2\sources\modules\core\include;E:\SDK\opencv_2.4.13.2\sources\modules\ts\include;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\include;E:\SDK\opencv_2.4.13.2\sources\modules\photo\include;E:\SDK\opencv_2.4.13.2\sources\modules\objdetect\include;E:\SDK\opencv_2.4.13.2\sources\modules\legacy\include;E:\SDK\opencv_2.4.13.2\sources\modules\ml\include;E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\gpu;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\src;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\test;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\src\cuda;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Release\opencv_gpu2413.lib;..\..\lib\Release\opencv_ts2413.lib;..\..\lib\Release\opencv_legacy2413.lib;..\..\lib\Release\opencv_ml2413.lib;..\..\lib\Release\opencv_objdetect2413.lib;..\..\lib\Release\opencv_photo2413.lib;..\..\lib\Release\opencv_calib3d2413.lib;..\..\lib\Release\opencv_features2d2413.lib;..\..\lib\Release\opencv_flann2413.lib;..\..\lib\Release\opencv_highgui2413.lib;..\..\lib\Release\opencv_video2413.lib;..\..\lib\Release\opencv_imgproc2413.lib;..\..\lib\Release\opencv_core2413.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/SDK/opencv_2.4.13.2/build_John_noGPU/bin/Release/opencv_perf_gpu.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/SDK/opencv_2.4.13.2/build_John_noGPU/bin/Release/opencv_perf_gpu.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\SDK\opencv_2.4.13.2\sources\modules\gpu\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/SDK/opencv_2.4.13.2/sources/modules/gpu/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/SDK/opencv_2.4.13.2/sources -BE:/SDK/opencv_2.4.13.2/build_John_noGPU --check-stamp-file E:/SDK/opencv_2.4.13.2/build_John_noGPU/modules/gpu/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/SDK/opencv_2.4.13.2/sources/modules/gpu/CMakeLists.txt;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\CMakeLists.txt;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\gpu\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/SDK/opencv_2.4.13.2/sources/modules/gpu/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/SDK/opencv_2.4.13.2/sources -BE:/SDK/opencv_2.4.13.2/build_John_noGPU --check-stamp-file E:/SDK/opencv_2.4.13.2/build_John_noGPU/modules/gpu/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/SDK/opencv_2.4.13.2/sources/modules/gpu/CMakeLists.txt;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\CMakeLists.txt;E:\SDK\opencv_2.4.13.2\sources\modules\gpu\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\gpu\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf\perf_precomp.hpp" />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf\perf_calib3d.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf\perf_core.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf\perf_denoising.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf\perf_features2d.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf\perf_filters.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf\perf_imgproc.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf\perf_labeling.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf\perf_main.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf\perf_matop.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf\perf_objdetect.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\gpu\perf\perf_video.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\gpu\opencv_perf_gpu_pch.cpp" >
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/SDK/opencv_2.4.13.2/sources/modules/gpu/perf/perf_precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/SDK/opencv_2.4.13.2/sources/modules/gpu/perf/perf_precomp.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\ZERO_CHECK.vcxproj">
+      <Project>34B73CEA-8A89-3D6B-BE55-8BC9F41E3886</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\calib3d\opencv_calib3d.vcxproj">
+      <Project>8F403C45-37D8-31DB-BB10-0CDE6CB9E654</Project>
+      <Name>opencv_calib3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\core\opencv_core.vcxproj">
+      <Project>97675405-ADDE-30D4-A00E-0F0D8083083D</Project>
+      <Name>opencv_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\features2d\opencv_features2d.vcxproj">
+      <Project>A4F54663-743A-3854-9DFD-74BF528E249E</Project>
+      <Name>opencv_features2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\flann\opencv_flann.vcxproj">
+      <Project>A262F513-673A-3AF3-9E38-B27328CF7D03</Project>
+      <Name>opencv_flann</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\gpu\opencv_gpu.vcxproj">
+      <Project>6BC4135B-03C0-3549-A93E-D2B1EC51B46C</Project>
+      <Name>opencv_gpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\highgui\opencv_highgui.vcxproj">
+      <Project>AA421B02-64C9-3666-8C8C-79452665C33D</Project>
+      <Name>opencv_highgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\imgproc\opencv_imgproc.vcxproj">
+      <Project>3986E7FC-0AA8-3672-BB73-9168DEAD526C</Project>
+      <Name>opencv_imgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\legacy\opencv_legacy.vcxproj">
+      <Project>92BA763A-1DCB-3129-A983-338F13B021A9</Project>
+      <Name>opencv_legacy</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ml\opencv_ml.vcxproj">
+      <Project>B8253C30-92A4-3A58-9A78-B4C1135388D8</Project>
+      <Name>opencv_ml</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\objdetect\opencv_objdetect.vcxproj">
+      <Project>E5504047-7C8B-3240-BA9F-59203447F1A5</Project>
+      <Name>opencv_objdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\photo\opencv_photo.vcxproj">
+      <Project>769DEDDD-C7F1-36E8-8022-E1821851BC8F</Project>
+      <Name>opencv_photo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ts\opencv_ts.vcxproj">
+      <Project>0D8E049B-9BEF-341F-A5CF-E330F9311254</Project>
+      <Name>opencv_ts</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\video\opencv_video.vcxproj">
+      <Project>B62849E9-302B-3182-BBA1-FE2597C538A7</Project>
+      <Name>opencv_video</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

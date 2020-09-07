@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ml\test\test_emknearestkmeans.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ml\test\test_gbttest.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ml\test\test_main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ml\test\test_mltests.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ml\test\test_mltests2.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ml\test\test_save_load.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ml\opencv_test_ml_pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\modules\ml\test\test_precomp.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\SDK\opencv_2.4.13.2\sources\modules\ml\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{72D18FE9-2C9B-3E80-AD43-BC00B07441FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{9337EA60-DD63-3BD8-8158-EE2183B46609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{DD9B1ACD-F268-34CC-95DE-3FFAA5C81472}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

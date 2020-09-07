@@ -1,0 +1,463 @@
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = OpenCV
+PROJECT_NUMBER         = 2.4.13.2
+PROJECT_BRIEF          = "Open Source Computer Vision"
+PROJECT_LOGO           = /Data/opencv_2.4.13.2/sources/doc/opencv-logo-small.png
+OUTPUT_DIRECTORY       = doxygen
+CREATE_SUBDIRS         = YES
+OUTPUT_LANGUAGE        = English
+BRIEF_MEMBER_DESC      = YES
+REPEAT_BRIEF           = YES
+ABBREVIATE_BRIEF       = "The $name class" \
+                         "The $name widget" \
+                         "The $name file" \
+                         is \
+                         provides \
+                         specifies \
+                         contains \
+                         represents \
+                         a \
+                         an \
+                         the
+ALWAYS_DETAILED_SEC    = NO
+INLINE_INHERITED_MEMB  = NO
+FULL_PATH_NAMES        = NO
+STRIP_FROM_PATH        =
+STRIP_FROM_INC_PATH    =
+SHORT_NAMES            = NO
+JAVADOC_AUTOBRIEF      = NO
+QT_AUTOBRIEF           = NO
+MULTILINE_CPP_IS_BRIEF = NO
+INHERIT_DOCS           = YES
+SEPARATE_MEMBER_PAGES  = NO
+TAB_SIZE               = 4
+ALIASES                =
+TCL_SUBST              =
+OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_JAVA   = NO
+OPTIMIZE_FOR_FORTRAN   = NO
+OPTIMIZE_OUTPUT_VHDL   = NO
+EXTENSION_MAPPING      =
+MARKDOWN_SUPPORT       = YES
+AUTOLINK_SUPPORT       = NO
+BUILTIN_STL_SUPPORT    = YES
+CPP_CLI_SUPPORT        = NO
+SIP_SUPPORT            = NO
+IDL_PROPERTY_SUPPORT   = YES
+DISTRIBUTE_GROUP_DOC   = NO
+SUBGROUPING            = YES
+INLINE_GROUPED_CLASSES = NO
+INLINE_SIMPLE_STRUCTS  = NO
+TYPEDEF_HIDES_STRUCT   = YES
+LOOKUP_CACHE_SIZE      = 0
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_PACKAGE        = NO
+EXTRACT_STATIC         = NO
+EXTRACT_LOCAL_CLASSES  = NO
+EXTRACT_LOCAL_METHODS  = NO
+EXTRACT_ANON_NSPACES   = NO
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+HIDE_FRIEND_COMPOUNDS  = NO
+HIDE_IN_BODY_DOCS      = NO
+INTERNAL_DOCS          = NO
+CASE_SENSE_NAMES       = YES
+HIDE_SCOPE_NAMES       = NO
+SHOW_INCLUDE_FILES     = YES
+SHOW_GROUPED_MEMB_INC  = NO
+FORCE_LOCAL_INCLUDES   = NO
+INLINE_INFO            = YES
+SORT_MEMBER_DOCS       = YES
+SORT_BRIEF_DOCS        = NO
+SORT_MEMBERS_CTORS_1ST = NO
+SORT_GROUP_NAMES       = NO
+SORT_BY_SCOPE_NAME     = NO
+STRICT_PROTO_MATCHING  = NO
+GENERATE_TODOLIST      = YES
+GENERATE_TESTLIST      = YES
+GENERATE_BUGLIST       = YES
+GENERATE_DEPRECATEDLIST= YES
+ENABLED_SECTIONS       =
+MAX_INITIALIZER_LINES  = 30
+SHOW_USED_FILES        = YES
+SHOW_FILES             = YES
+SHOW_NAMESPACES        = YES
+FILE_VERSION_FILTER    =
+LAYOUT_FILE            = /Data/opencv_2.4.13.2/sources/doc/DoxygenLayout.xml
+CITE_BIB_FILES         =
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = NO
+WARN_FORMAT            = "$file:$line: $text"
+WARN_LOGFILE           =
+INPUT                  = /Data/opencv_2.4.13.2/sources/modules/core/include/opencv2/core.hpp \
+/Data/opencv_2.4.13.2/sources/modules/core/include/opencv2/core/affine.hpp \
+/Data/opencv_2.4.13.2/sources/modules/core/include/opencv2/core/core.hpp \
+/Data/opencv_2.4.13.2/sources/modules/core/include/opencv2/core/cuda_devptrs.hpp \
+/Data/opencv_2.4.13.2/sources/modules/core/include/opencv2/core/devmem2d.hpp \
+/Data/opencv_2.4.13.2/sources/modules/core/include/opencv2/core/eigen.hpp \
+/Data/opencv_2.4.13.2/sources/modules/core/include/opencv2/core/gpumat.hpp \
+/Data/opencv_2.4.13.2/sources/modules/core/include/opencv2/core/internal.hpp \
+/Data/opencv_2.4.13.2/sources/modules/core/include/opencv2/core/mat.hpp \
+/Data/opencv_2.4.13.2/sources/modules/core/include/opencv2/core/opengl_interop.hpp \
+/Data/opencv_2.4.13.2/sources/modules/core/include/opencv2/core/opengl_interop_deprecated.hpp \
+/Data/opencv_2.4.13.2/sources/modules/core/include/opencv2/core/operations.hpp \
+/Data/opencv_2.4.13.2/sources/modules/core/include/opencv2/core/version.hpp \
+/Data/opencv_2.4.13.2/sources/modules/core/include/opencv2/core/wimage.hpp \
+/Data/opencv_2.4.13.2/sources/modules/core/include/opencv2/core/core_c.h \
+/Data/opencv_2.4.13.2/sources/modules/core/include/opencv2/core/types_c.h \
+/Data/opencv_2.4.13.2/sources/modules/core/doc \
+/Data/opencv_2.4.13.2/sources/modules/imgproc/include/opencv2/imgproc.hpp \
+/Data/opencv_2.4.13.2/sources/modules/imgproc/include/opencv2/imgproc/imgproc.hpp \
+/Data/opencv_2.4.13.2/sources/modules/imgproc/include/opencv2/imgproc/imgproc_c.h \
+/Data/opencv_2.4.13.2/sources/modules/imgproc/include/opencv2/imgproc/types_c.h \
+/Data/opencv_2.4.13.2/sources/modules/imgproc/doc \
+/Data/opencv_2.4.13.2/sources/modules/highgui/include/opencv2/highgui.hpp \
+/Data/opencv_2.4.13.2/sources/modules/highgui/include/opencv2/highgui/highgui.hpp \
+/Data/opencv_2.4.13.2/sources/modules/highgui/include/opencv2/highgui/cap_ios.h \
+/Data/opencv_2.4.13.2/sources/modules/highgui/include/opencv2/highgui/highgui_c.h \
+/Data/opencv_2.4.13.2/sources/modules/highgui/include/opencv2/highgui/ios.h \
+/Data/opencv_2.4.13.2/sources/modules/highgui/doc \
+/Data/opencv_2.4.13.2/sources/modules/video/include/opencv2/video.hpp \
+/Data/opencv_2.4.13.2/sources/modules/video/include/opencv2/video/background_segm.hpp \
+/Data/opencv_2.4.13.2/sources/modules/video/include/opencv2/video/tracking.hpp \
+/Data/opencv_2.4.13.2/sources/modules/video/include/opencv2/video/video.hpp \
+/Data/opencv_2.4.13.2/sources/modules/video/doc \
+/Data/opencv_2.4.13.2/sources/modules/calib3d/include/opencv2/calib3d.hpp \
+/Data/opencv_2.4.13.2/sources/modules/calib3d/include/opencv2/calib3d/calib3d.hpp \
+/Data/opencv_2.4.13.2/sources/modules/calib3d/doc \
+/Data/opencv_2.4.13.2/sources/modules/features2d/include/opencv2/features2d.hpp \
+/Data/opencv_2.4.13.2/sources/modules/features2d/include/opencv2/features2d/features2d.hpp \
+/Data/opencv_2.4.13.2/sources/modules/features2d/doc \
+/Data/opencv_2.4.13.2/sources/modules/objdetect/include/opencv2/objdetect.hpp \
+/Data/opencv_2.4.13.2/sources/modules/objdetect/include/opencv2/objdetect/objdetect.hpp \
+/Data/opencv_2.4.13.2/sources/modules/objdetect/doc \
+/Data/opencv_2.4.13.2/sources/modules/ml/include/opencv2/ml.hpp \
+/Data/opencv_2.4.13.2/sources/modules/ml/include/opencv2/ml/ml.hpp \
+/Data/opencv_2.4.13.2/sources/modules/ml/doc \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann.hpp \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/flann.hpp \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/flann_base.hpp \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/miniflann.hpp \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/all_indices.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/allocator.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/any.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/autotuned_index.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/composite_index.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/config.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/defines.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/dist.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/dummy.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/dynamic_bitset.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/general.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/ground_truth.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/hdf5.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/heap.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/hierarchical_clustering_index.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/index_testing.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/kdtree_index.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/kdtree_single_index.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/kmeans_index.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/linear_index.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/logger.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/lsh_index.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/lsh_table.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/matrix.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/nn_index.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/object_factory.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/params.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/random.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/result_set.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/sampling.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/saving.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/simplex_downhill.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/include/opencv2/flann/timer.h \
+/Data/opencv_2.4.13.2/sources/modules/flann/doc \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/devmem2d.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/gpu.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/gpumat.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/stream_accessor.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/block.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/border_interpolate.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/color.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/common.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/datamov_utils.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/dynamic_smem.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/emulation.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/filters.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/funcattrib.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/functional.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/limits.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/reduce.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/saturate_cast.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/scan.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/simd_functions.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/static_check.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/transform.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/type_traits.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/utility.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/vec_distance.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/vec_math.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/vec_traits.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/warp.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/warp_reduce.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/warp_shuffle.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/detail/color_detail.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/detail/reduce.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/detail/reduce_key_val.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/detail/transform_detail.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/detail/type_traits_detail.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/include/opencv2/gpu/device/detail/vec_distance_detail.hpp \
+/Data/opencv_2.4.13.2/sources/modules/gpu/doc \
+/Data/opencv_2.4.13.2/sources/modules/photo/include/opencv2/photo.hpp \
+/Data/opencv_2.4.13.2/sources/modules/photo/include/opencv2/photo/photo.hpp \
+/Data/opencv_2.4.13.2/sources/modules/photo/include/opencv2/photo/photo_c.h \
+/Data/opencv_2.4.13.2/sources/modules/photo/doc \
+/Data/opencv_2.4.13.2/sources/modules/stitching/include/opencv2/stitching.hpp \
+/Data/opencv_2.4.13.2/sources/modules/stitching/include/opencv2/stitching/stitcher.hpp \
+/Data/opencv_2.4.13.2/sources/modules/stitching/include/opencv2/stitching/warpers.hpp \
+/Data/opencv_2.4.13.2/sources/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp \
+/Data/opencv_2.4.13.2/sources/modules/stitching/include/opencv2/stitching/detail/blenders.hpp \
+/Data/opencv_2.4.13.2/sources/modules/stitching/include/opencv2/stitching/detail/camera.hpp \
+/Data/opencv_2.4.13.2/sources/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp \
+/Data/opencv_2.4.13.2/sources/modules/stitching/include/opencv2/stitching/detail/matchers.hpp \
+/Data/opencv_2.4.13.2/sources/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp \
+/Data/opencv_2.4.13.2/sources/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp \
+/Data/opencv_2.4.13.2/sources/modules/stitching/include/opencv2/stitching/detail/util.hpp \
+/Data/opencv_2.4.13.2/sources/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp \
+/Data/opencv_2.4.13.2/sources/modules/stitching/include/opencv2/stitching/detail/warpers.hpp \
+/Data/opencv_2.4.13.2/sources/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp \
+/Data/opencv_2.4.13.2/sources/modules/stitching/doc \
+/Data/opencv_2.4.13.2/sources/modules/nonfree/include/opencv2/nonfree/features2d.hpp \
+/Data/opencv_2.4.13.2/sources/modules/nonfree/include/opencv2/nonfree/gpu.hpp \
+/Data/opencv_2.4.13.2/sources/modules/nonfree/include/opencv2/nonfree/nonfree.hpp \
+/Data/opencv_2.4.13.2/sources/modules/nonfree/include/opencv2/nonfree/ocl.hpp \
+/Data/opencv_2.4.13.2/sources/modules/nonfree/doc \
+/Data/opencv_2.4.13.2/sources/modules/contrib/include/opencv2/contrib/contrib.hpp \
+/Data/opencv_2.4.13.2/sources/modules/contrib/include/opencv2/contrib/detection_based_tracker.hpp \
+/Data/opencv_2.4.13.2/sources/modules/contrib/include/opencv2/contrib/hybridtracker.hpp \
+/Data/opencv_2.4.13.2/sources/modules/contrib/include/opencv2/contrib/openfabmap.hpp \
+/Data/opencv_2.4.13.2/sources/modules/contrib/include/opencv2/contrib/retina.hpp \
+/Data/opencv_2.4.13.2/sources/modules/contrib/doc \
+/Data/opencv_2.4.13.2/sources/modules/legacy/include/opencv2/legacy/blobtrack.hpp \
+/Data/opencv_2.4.13.2/sources/modules/legacy/include/opencv2/legacy/compat.hpp \
+/Data/opencv_2.4.13.2/sources/modules/legacy/include/opencv2/legacy/legacy.hpp \
+/Data/opencv_2.4.13.2/sources/modules/legacy/include/opencv2/legacy/streams.hpp \
+/Data/opencv_2.4.13.2/sources/modules/legacy/doc \
+/Data/opencv_2.4.13.2/sources/modules/ocl/include/opencv2/ocl/matrix_operations.hpp \
+/Data/opencv_2.4.13.2/sources/modules/ocl/include/opencv2/ocl/ocl.hpp \
+/Data/opencv_2.4.13.2/sources/modules/ocl/doc \
+/Data/opencv_2.4.13.2/sources/modules/superres/include/opencv2/superres.hpp \
+/Data/opencv_2.4.13.2/sources/modules/superres/include/opencv2/superres/optical_flow.hpp \
+/Data/opencv_2.4.13.2/sources/modules/superres/include/opencv2/superres/superres.hpp \
+/Data/opencv_2.4.13.2/sources/modules/superres/doc \
+/Data/opencv_2.4.13.2/sources/modules/videostab/include/opencv2/videostab.hpp \
+/Data/opencv_2.4.13.2/sources/modules/videostab/include/opencv2/videostab/deblurring.hpp \
+/Data/opencv_2.4.13.2/sources/modules/videostab/include/opencv2/videostab/fast_marching.hpp \
+/Data/opencv_2.4.13.2/sources/modules/videostab/include/opencv2/videostab/fast_marching_inl.hpp \
+/Data/opencv_2.4.13.2/sources/modules/videostab/include/opencv2/videostab/frame_source.hpp \
+/Data/opencv_2.4.13.2/sources/modules/videostab/include/opencv2/videostab/global_motion.hpp \
+/Data/opencv_2.4.13.2/sources/modules/videostab/include/opencv2/videostab/inpainting.hpp \
+/Data/opencv_2.4.13.2/sources/modules/videostab/include/opencv2/videostab/log.hpp \
+/Data/opencv_2.4.13.2/sources/modules/videostab/include/opencv2/videostab/motion_stabilizing.hpp \
+/Data/opencv_2.4.13.2/sources/modules/videostab/include/opencv2/videostab/optical_flow.hpp \
+/Data/opencv_2.4.13.2/sources/modules/videostab/include/opencv2/videostab/stabilizer.hpp \
+/Data/opencv_2.4.13.2/sources/modules/videostab/include/opencv2/videostab/videostab.hpp \
+/Data/opencv_2.4.13.2/sources/modules/viz/doc \
+
+INPUT_ENCODING         = UTF-8
+FILE_PATTERNS          =
+RECURSIVE              = YES
+EXCLUDE                =
+EXCLUDE_SYMLINKS       = NO
+EXCLUDE_PATTERNS       =
+EXCLUDE_SYMBOLS        = CV_WRAP \
+                         CV_EXPORTS \
+                         CV_EXPORTS_W \
+                         CV_WRAP_AS
+EXAMPLE_PATH           =
+EXAMPLE_PATTERNS       = *
+EXAMPLE_RECURSIVE      = NO
+IMAGE_PATH             = /Data/opencv_2.4.13.2/sources/modules/core/doc \
+/Data/opencv_2.4.13.2/sources/modules/imgproc/doc \
+/Data/opencv_2.4.13.2/sources/modules/highgui/doc \
+/Data/opencv_2.4.13.2/sources/modules/video/doc \
+/Data/opencv_2.4.13.2/sources/modules/calib3d/doc \
+/Data/opencv_2.4.13.2/sources/modules/features2d/doc \
+/Data/opencv_2.4.13.2/sources/modules/objdetect/doc \
+/Data/opencv_2.4.13.2/sources/modules/ml/doc \
+/Data/opencv_2.4.13.2/sources/modules/flann/doc \
+/Data/opencv_2.4.13.2/sources/modules/gpu/doc \
+/Data/opencv_2.4.13.2/sources/modules/photo/doc \
+/Data/opencv_2.4.13.2/sources/modules/stitching/doc \
+/Data/opencv_2.4.13.2/sources/modules/nonfree/doc \
+/Data/opencv_2.4.13.2/sources/modules/contrib/doc \
+/Data/opencv_2.4.13.2/sources/modules/legacy/doc \
+/Data/opencv_2.4.13.2/sources/modules/ocl/doc \
+/Data/opencv_2.4.13.2/sources/modules/superres/doc \
+/Data/opencv_2.4.13.2/sources/modules/viz/doc
+INPUT_FILTER           =
+FILTER_PATTERNS        =
+FILTER_SOURCE_FILES    = NO
+FILTER_SOURCE_PATTERNS =
+USE_MDFILE_AS_MAINPAGE = /Data/opencv_2.4.13.2/sources/README.md
+SOURCE_BROWSER         = NO
+INLINE_SOURCES         = NO
+STRIP_CODE_COMMENTS    = YES
+REFERENCED_BY_RELATION = NO
+REFERENCES_RELATION    = NO
+REFERENCES_LINK_SOURCE = YES
+SOURCE_TOOLTIPS        = YES
+USE_HTAGS              = NO
+VERBATIM_HEADERS       = NO
+ALPHABETICAL_INDEX     = NO
+COLS_IN_ALPHA_INDEX    = 5
+IGNORE_PREFIX          =
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_HEADER            =
+HTML_FOOTER            =
+HTML_STYLESHEET        =
+HTML_EXTRA_STYLESHEET  =
+HTML_EXTRA_FILES       =
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+HTML_TIMESTAMP         = YES
+HTML_DYNAMIC_SECTIONS  = NO
+HTML_INDEX_NUM_ENTRIES = 100
+GENERATE_DOCSET        = NO
+DOCSET_FEEDNAME        = "Doxygen generated docs"
+DOCSET_BUNDLE_ID       = org.doxygen.Project
+DOCSET_PUBLISHER_ID    = org.doxygen.Publisher
+DOCSET_PUBLISHER_NAME  = Publisher
+GENERATE_HTMLHELP      = NO
+CHM_FILE               =
+HHC_LOCATION           =
+GENERATE_CHI           = NO
+CHM_INDEX_ENCODING     =
+BINARY_TOC             = NO
+TOC_EXPAND             = NO
+GENERATE_QHP           = NO
+QCH_FILE               =
+QHP_NAMESPACE          = org.doxygen.Project
+QHP_VIRTUAL_FOLDER     = doc
+QHP_CUST_FILTER_NAME   =
+QHP_CUST_FILTER_ATTRS  =
+QHP_SECT_FILTER_ATTRS  =
+QHG_LOCATION           =
+GENERATE_ECLIPSEHELP   = NO
+ECLIPSE_DOC_ID         = org.doxygen.Project
+DISABLE_INDEX          = YES
+GENERATE_TREEVIEW      = YES
+ENUM_VALUES_PER_LINE   = 4
+TREEVIEW_WIDTH         = 250
+EXT_LINKS_IN_WINDOW    = YES
+FORMULA_FONTSIZE       = 10
+FORMULA_TRANSPARENT    = YES
+USE_MATHJAX            = NO
+MATHJAX_FORMAT         = HTML-CSS
+MATHJAX_RELPATH        = http://cdn.mathjax.org/mathjax/latest
+MATHJAX_EXTENSIONS     =
+MATHJAX_CODEFILE       =
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = NO
+EXTERNAL_SEARCH        = NO
+SEARCHENGINE_URL       =
+SEARCHDATA_FILE        = searchdata.xml
+EXTERNAL_SEARCH_ID     =
+EXTRA_SEARCH_MAPPINGS  =
+GENERATE_LATEX         = YES
+LATEX_OUTPUT           = latex
+LATEX_CMD_NAME         = latex
+MAKEINDEX_CMD_NAME     = makeindex
+COMPACT_LATEX          = NO
+PAPER_TYPE             = a4
+EXTRA_PACKAGES         =
+LATEX_HEADER           =
+LATEX_FOOTER           =
+LATEX_EXTRA_FILES      =
+PDF_HYPERLINKS         = YES
+USE_PDFLATEX           = YES
+LATEX_BATCHMODE        = NO
+LATEX_HIDE_INDICES     = NO
+LATEX_SOURCE_CODE      = NO
+LATEX_BIB_STYLE        = plain
+GENERATE_RTF           = NO
+RTF_OUTPUT             = rtf
+COMPACT_RTF            = NO
+RTF_HYPERLINKS         = NO
+RTF_STYLESHEET_FILE    =
+RTF_EXTENSIONS_FILE    =
+GENERATE_MAN           = NO
+MAN_OUTPUT             = man
+MAN_EXTENSION          = .3
+MAN_LINKS              = NO
+GENERATE_XML           = NO
+XML_OUTPUT             = xml
+XML_PROGRAMLISTING     = YES
+GENERATE_DOCBOOK       = NO
+DOCBOOK_OUTPUT         = docbook
+GENERATE_AUTOGEN_DEF   = NO
+GENERATE_PERLMOD       = NO
+PERLMOD_LATEX          = NO
+PERLMOD_PRETTY         = YES
+PERLMOD_MAKEVAR_PREFIX =
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO
+SEARCH_INCLUDES        = YES
+INCLUDE_PATH           =
+INCLUDE_FILE_PATTERNS  =
+PREDEFINED             = CV_WRAP= \
+                         CV_WRAP_AS(x)= \
+                         __cplusplus=1 \
+                         CVAPI(x)=x \
+                         CV_PROP_RW= \
+                         CV_EXPORTS= \
+                         CV_EXPORTS_W=
+EXPAND_AS_DEFINED      =
+SKIP_FUNCTION_MACROS   = YES
+TAGFILES               =
+GENERATE_TAGFILE       =
+ALLEXTERNALS           = NO
+EXTERNAL_GROUPS        = YES
+EXTERNAL_PAGES         = YES
+PERL_PATH              = /usr/bin/perl
+CLASS_DIAGRAMS         = YES
+MSCGEN_PATH            =
+DIA_PATH               =
+HIDE_UNDOC_RELATIONS   = NO
+HAVE_DOT               = NO
+DOT_NUM_THREADS        = 0
+DOT_FONTNAME           = Helvetica
+DOT_FONTSIZE           = 10
+DOT_FONTPATH           =
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+GROUP_GRAPHS           = YES
+UML_LOOK               = YES
+UML_LIMIT_NUM_FIELDS   = 10
+TEMPLATE_RELATIONS     = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = NO
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+DOT_IMAGE_FORMAT       = svg
+INTERACTIVE_SVG        = YES
+DOT_PATH               =
+DOTFILE_DIRS           =
+MSCFILE_DIRS           =
+DIAFILE_DIRS           =
+DOT_GRAPH_MAX_NODES    = 50
+MAX_DOT_GRAPH_DEPTH    = 0
+DOT_TRANSPARENT        = NO
+DOT_MULTI_TARGETS      = NO
+GENERATE_LEGEND        = YES
+DOT_CLEANUP            = YES

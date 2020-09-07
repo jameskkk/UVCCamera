@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A30742CE-B488-3733-AF4D-237EFBDCAF26}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_perf_tests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\SDK\opencv_2.4.13.2\sources\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/SDK/opencv_2.4.13.2/sources/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/SDK/opencv_2.4.13.2/sources -BE:/SDK/opencv_2.4.13.2/build_John_noGPU --check-stamp-file E:/SDK/opencv_2.4.13.2/build_John_noGPU/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/SDK/opencv_2.4.13.2/sources/CMakeLists.txt;E:\SDK\opencv_2.4.13.2\sources\CMakeLists.txt;E:\SDK\opencv_2.4.13.2\build_John_noGPU\CMakeFiles\3.8.0\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;E:\SDK\opencv_2.4.13.2\build_John_noGPU\CMakeFiles\3.8.0\CMakeCXXCompiler.cmake;E:\SDK\opencv_2.4.13.2\build_John_noGPU\CMakeFiles\3.8.0\CMakeCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;E:\SDK\opencv_2.4.13.2\build_John_noGPU\CMakeFiles\3.8.0\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVUtils.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVDetectCXXCompiler.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVLegacyOptions.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVVersion.cmake;E:\SDK\opencv_2.4.13.2\sources\modules\core\include\opencv2\core\version.hpp;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVCompilerOptions.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVCRTLinkage.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\checks\winrttest.cpp;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVPCHSupport.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVModule.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\TestBigEndian.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVFindLibsGrfmt.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVFindLibsGUI.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\checks\win32uitest.cpp;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVFindLibsVideo.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\checks\vfwtest.cpp;E:\SDK\opencv_2.4.13.2\sources\3rdparty\ffmpeg\ffmpeg_version.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVFindLibsPerf.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVFindLATEX.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVDetectPython.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVDetectApacheAnt.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindJNI.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeFindJavaCommon.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVDetectOpenCL.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\checks\opencl.cpp;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVDetectVTK.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVExtraTargets.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\cmake_uninstall.cmake.in;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVGenHeaders.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\cvconfig.h.in;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\opencv_modules.hpp.in;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVGenPkgconfig.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\opencv-XXX.pc.in;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVGenAndroidMK.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVGenConfig.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\OpenCVConfig.cmake.in;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\OpenCVConfig-version.cmake.in;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\OpenCVConfig.cmake.in;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\OpenCVConfig-version.cmake.in;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\OpenCVConfig.cmake.in;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\OpenCVConfig-version.cmake.in;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVGenInfoPlist.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVPackaging.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.8\Templates\CPackConfig.cmake.in;C:\Program Files\CMake\share\cmake-3.8\Templates\CPackConfig.cmake.in;E:\SDK\opencv_2.4.13.2\sources\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/SDK/opencv_2.4.13.2/sources/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/SDK/opencv_2.4.13.2/sources -BE:/SDK/opencv_2.4.13.2/build_John_noGPU --check-stamp-file E:/SDK/opencv_2.4.13.2/build_John_noGPU/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/SDK/opencv_2.4.13.2/sources/CMakeLists.txt;E:\SDK\opencv_2.4.13.2\sources\CMakeLists.txt;E:\SDK\opencv_2.4.13.2\build_John_noGPU\CMakeFiles\3.8.0\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;E:\SDK\opencv_2.4.13.2\build_John_noGPU\CMakeFiles\3.8.0\CMakeCXXCompiler.cmake;E:\SDK\opencv_2.4.13.2\build_John_noGPU\CMakeFiles\3.8.0\CMakeCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;E:\SDK\opencv_2.4.13.2\build_John_noGPU\CMakeFiles\3.8.0\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVUtils.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVDetectCXXCompiler.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVLegacyOptions.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVVersion.cmake;E:\SDK\opencv_2.4.13.2\sources\modules\core\include\opencv2\core\version.hpp;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVCompilerOptions.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVCRTLinkage.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\checks\winrttest.cpp;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVPCHSupport.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVModule.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\TestBigEndian.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVFindLibsGrfmt.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVFindLibsGUI.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\checks\win32uitest.cpp;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVFindLibsVideo.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\checks\vfwtest.cpp;E:\SDK\opencv_2.4.13.2\sources\3rdparty\ffmpeg\ffmpeg_version.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVFindLibsPerf.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVFindLATEX.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVDetectPython.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVDetectApacheAnt.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindJNI.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeFindJavaCommon.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVDetectOpenCL.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\checks\opencl.cpp;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVDetectVTK.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVExtraTargets.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\cmake_uninstall.cmake.in;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVGenHeaders.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\cvconfig.h.in;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\opencv_modules.hpp.in;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVGenPkgconfig.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\opencv-XXX.pc.in;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVGenAndroidMK.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVGenConfig.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\OpenCVConfig.cmake.in;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\OpenCVConfig-version.cmake.in;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\OpenCVConfig.cmake.in;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\OpenCVConfig-version.cmake.in;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\OpenCVConfig.cmake.in;E:\SDK\opencv_2.4.13.2\sources\cmake\templates\OpenCVConfig-version.cmake.in;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVGenInfoPlist.cmake;E:\SDK\opencv_2.4.13.2\sources\cmake\OpenCVPackaging.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.8\Templates\CPackConfig.cmake.in;C:\Program Files\CMake\share\cmake-3.8\Templates\CPackConfig.cmake.in;E:\SDK\opencv_2.4.13.2\sources\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\ZERO_CHECK.vcxproj">
+      <Project>34B73CEA-8A89-3D6B-BE55-8BC9F41E3886</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\calib3d\opencv_perf_calib3d.vcxproj">
+      <Project>84A053F7-0A5D-306D-B8BB-236EE8B41281</Project>
+      <Name>opencv_perf_calib3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\core\opencv_perf_core.vcxproj">
+      <Project>2D59A358-4D1F-3090-9C1C-6E9F9FB00F05</Project>
+      <Name>opencv_perf_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\features2d\opencv_perf_features2d.vcxproj">
+      <Project>D0E87AFA-4EB5-3069-8858-A191AB6D1A72</Project>
+      <Name>opencv_perf_features2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\gpu\opencv_perf_gpu.vcxproj">
+      <Project>FF46E9A2-9A34-3DEA-B15E-DA36BFB3CCA9</Project>
+      <Name>opencv_perf_gpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\highgui\opencv_perf_highgui.vcxproj">
+      <Project>40792314-6886-330E-8E96-6CD7D3617DD1</Project>
+      <Name>opencv_perf_highgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\imgproc\opencv_perf_imgproc.vcxproj">
+      <Project>3CF70933-C810-32F1-BF62-3E032C93D54E</Project>
+      <Name>opencv_perf_imgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\nonfree\opencv_perf_nonfree.vcxproj">
+      <Project>203566D4-002C-381F-ACB6-A7DBBF6C8192</Project>
+      <Name>opencv_perf_nonfree</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\objdetect\opencv_perf_objdetect.vcxproj">
+      <Project>69535248-0738-3DC9-AFC0-ADF2D2CB4703</Project>
+      <Name>opencv_perf_objdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl\opencv_perf_ocl.vcxproj">
+      <Project>47C27112-225A-394E-AB9D-A739A336D5CC</Project>
+      <Name>opencv_perf_ocl</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\photo\opencv_perf_photo.vcxproj">
+      <Project>B1C501DF-C062-376E-9379-0A3785431DF0</Project>
+      <Name>opencv_perf_photo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\stitching\opencv_perf_stitching.vcxproj">
+      <Project>CEB83BC1-EC46-348A-8AE7-770DA63AB1FC</Project>
+      <Name>opencv_perf_stitching</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\superres\opencv_perf_superres.vcxproj">
+      <Project>7ACE7EF8-A25E-3418-AF70-F9A5BF372CA3</Project>
+      <Name>opencv_perf_superres</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\video\opencv_perf_video.vcxproj">
+      <Project>5BAE3C9A-4D93-3D6E-B3AC-1D15D988C813</Project>
+      <Name>opencv_perf_video</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

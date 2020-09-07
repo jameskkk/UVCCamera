@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_api.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_arithm.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_bgfg.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_blend.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_brute_force_matcher.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_calib3d.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_canny.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_color.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_fft.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_filters.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_gemm.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_imgproc.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_kalman.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_kmeans.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_match_template.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_matrix_operation.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_mean_shift.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_ml.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_moments.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_objdetect.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_optflow.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_pyramids.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_sort.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_split_merge.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_warp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\utility.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl\opencv_test_ocl_pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\test_precomp.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test\utility.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{72D18FE9-2C9B-3E80-AD43-BC00B07441FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{9337EA60-DD63-3BD8-8158-EE2183B46609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{DD9B1ACD-F268-34CC-95DE-3FFAA5C81472}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

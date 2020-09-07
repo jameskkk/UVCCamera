@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\SDK\opencv_2.4.13.2\sources\doc\CMakeLists.txt" />
+    <CustomBuild Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\CMakeFiles\1b5841e59c913c18a31977b6c32af73d\install_docs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\doc\CMakeFiles\install_docs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{58435126-2461-3E86-A49C-E813A399516C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

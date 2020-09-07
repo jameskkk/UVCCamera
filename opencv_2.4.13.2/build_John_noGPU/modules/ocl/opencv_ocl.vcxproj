@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{7CB5F804-BAA4-3956-A037-35DB8DF3156B}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_ocl</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_ocl.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_ocl2413d</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_ocl.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_ocl2413</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\sources\modules\ocl\perf;E:\SDK\opencv_2.4.13.2\sources\modules\video\include;E:\SDK\opencv_2.4.13.2\sources\modules\calib3d\include;E:\SDK\opencv_2.4.13.2\sources\modules\features2d\include;E:\SDK\opencv_2.4.13.2\sources\modules\highgui\include;E:\SDK\opencv_2.4.13.2\sources\modules\imgproc\include;E:\SDK\opencv_2.4.13.2\sources\modules\flann\include;E:\SDK\opencv_2.4.13.2\sources\modules\core\include;E:\SDK\opencv_2.4.13.2\sources\modules\ts\include;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\include;E:\SDK\opencv_2.4.13.2\sources\modules\objdetect\include;E:\SDK\opencv_2.4.13.2\sources\modules\ml\include;E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test;E:\SDK\opencv_2.4.13.2\sources\3rdparty\include\opencl\1.2;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;4589;4359</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ForcedIncludeFiles>E:/SDK/opencv_2.4.13.2/sources/modules/ocl/src/precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>E:/SDK/opencv_2.4.13.2/sources/modules/ocl/src/precomp.hpp</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;CMAKE_INTDIR="Debug";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>E:\SDK\opencv_2.4.13.2\build_John_noGPU\lib\Debug\opencv_ocl2413d.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;CMAKE_INTDIR=\"Debug\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\sources\modules\ocl\perf;E:\SDK\opencv_2.4.13.2\sources\modules\video\include;E:\SDK\opencv_2.4.13.2\sources\modules\calib3d\include;E:\SDK\opencv_2.4.13.2\sources\modules\features2d\include;E:\SDK\opencv_2.4.13.2\sources\modules\highgui\include;E:\SDK\opencv_2.4.13.2\sources\modules\imgproc\include;E:\SDK\opencv_2.4.13.2\sources\modules\flann\include;E:\SDK\opencv_2.4.13.2\sources\modules\core\include;E:\SDK\opencv_2.4.13.2\sources\modules\ts\include;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\include;E:\SDK\opencv_2.4.13.2\sources\modules\objdetect\include;E:\SDK\opencv_2.4.13.2\sources\modules\ml\include;E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test;E:\SDK\opencv_2.4.13.2\sources\3rdparty\include\opencl\1.2;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\sources\modules\ocl\perf;E:\SDK\opencv_2.4.13.2\sources\modules\video\include;E:\SDK\opencv_2.4.13.2\sources\modules\calib3d\include;E:\SDK\opencv_2.4.13.2\sources\modules\features2d\include;E:\SDK\opencv_2.4.13.2\sources\modules\highgui\include;E:\SDK\opencv_2.4.13.2\sources\modules\imgproc\include;E:\SDK\opencv_2.4.13.2\sources\modules\flann\include;E:\SDK\opencv_2.4.13.2\sources\modules\core\include;E:\SDK\opencv_2.4.13.2\sources\modules\ts\include;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\include;E:\SDK\opencv_2.4.13.2\sources\modules\objdetect\include;E:\SDK\opencv_2.4.13.2\sources\modules\ml\include;E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test;E:\SDK\opencv_2.4.13.2\sources\3rdparty\include\opencl\1.2;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Debug\opencv_calib3d2413d.lib;..\..\lib\Debug\opencv_ml2413d.lib;..\..\lib\Debug\opencv_objdetect2413d.lib;..\..\lib\Debug\opencv_video2413d.lib;..\..\lib\Debug\opencv_features2d2413d.lib;..\..\lib\Debug\opencv_flann2413d.lib;..\..\lib\Debug\opencv_highgui2413d.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;..\..\lib\Debug\opencv_imgproc2413d.lib;..\..\lib\Debug\opencv_core2413d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/SDK/opencv_2.4.13.2/build_John_noGPU/lib/Debug/opencv_ocl2413d.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/SDK/opencv_2.4.13.2/build_John_noGPU/bin/Debug/opencv_ocl2413d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\sources\modules\ocl\perf;E:\SDK\opencv_2.4.13.2\sources\modules\video\include;E:\SDK\opencv_2.4.13.2\sources\modules\calib3d\include;E:\SDK\opencv_2.4.13.2\sources\modules\features2d\include;E:\SDK\opencv_2.4.13.2\sources\modules\highgui\include;E:\SDK\opencv_2.4.13.2\sources\modules\imgproc\include;E:\SDK\opencv_2.4.13.2\sources\modules\flann\include;E:\SDK\opencv_2.4.13.2\sources\modules\core\include;E:\SDK\opencv_2.4.13.2\sources\modules\ts\include;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\include;E:\SDK\opencv_2.4.13.2\sources\modules\objdetect\include;E:\SDK\opencv_2.4.13.2\sources\modules\ml\include;E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test;E:\SDK\opencv_2.4.13.2\sources\3rdparty\include\opencl\1.2;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;4589;4359</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ForcedIncludeFiles>E:/SDK/opencv_2.4.13.2/sources/modules/ocl/src/precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>E:/SDK/opencv_2.4.13.2/sources/modules/ocl/src/precomp.hpp</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;CMAKE_INTDIR="Release";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>E:\SDK\opencv_2.4.13.2\build_John_noGPU\lib\Release\opencv_ocl2413.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;CMAKE_INTDIR=\"Release\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\sources\modules\ocl\perf;E:\SDK\opencv_2.4.13.2\sources\modules\video\include;E:\SDK\opencv_2.4.13.2\sources\modules\calib3d\include;E:\SDK\opencv_2.4.13.2\sources\modules\features2d\include;E:\SDK\opencv_2.4.13.2\sources\modules\highgui\include;E:\SDK\opencv_2.4.13.2\sources\modules\imgproc\include;E:\SDK\opencv_2.4.13.2\sources\modules\flann\include;E:\SDK\opencv_2.4.13.2\sources\modules\core\include;E:\SDK\opencv_2.4.13.2\sources\modules\ts\include;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\include;E:\SDK\opencv_2.4.13.2\sources\modules\objdetect\include;E:\SDK\opencv_2.4.13.2\sources\modules\ml\include;E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test;E:\SDK\opencv_2.4.13.2\sources\3rdparty\include\opencl\1.2;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\SDK\opencv_2.4.13.2\sources\modules\ocl\perf;E:\SDK\opencv_2.4.13.2\sources\modules\video\include;E:\SDK\opencv_2.4.13.2\sources\modules\calib3d\include;E:\SDK\opencv_2.4.13.2\sources\modules\features2d\include;E:\SDK\opencv_2.4.13.2\sources\modules\highgui\include;E:\SDK\opencv_2.4.13.2\sources\modules\imgproc\include;E:\SDK\opencv_2.4.13.2\sources\modules\flann\include;E:\SDK\opencv_2.4.13.2\sources\modules\core\include;E:\SDK\opencv_2.4.13.2\sources\modules\ts\include;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\include;E:\SDK\opencv_2.4.13.2\sources\modules\objdetect\include;E:\SDK\opencv_2.4.13.2\sources\modules\ml\include;E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\test;E:\SDK\opencv_2.4.13.2\sources\3rdparty\include\opencl\1.2;E:\SDK\opencv_2.4.13.2\build_John_noGPU;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Release\opencv_calib3d2413.lib;..\..\lib\Release\opencv_ml2413.lib;..\..\lib\Release\opencv_objdetect2413.lib;..\..\lib\Release\opencv_video2413.lib;..\..\lib\Release\opencv_features2d2413.lib;..\..\lib\Release\opencv_flann2413.lib;..\..\lib\Release\opencv_highgui2413.lib;..\..\lib\Release\opencv_imgproc2413.lib;..\..\lib\Release\opencv_core2413.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/SDK/opencv_2.4.13.2/build_John_noGPU/lib/Release/opencv_ocl2413.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/SDK/opencv_2.4.13.2/build_John_noGPU/bin/Release/opencv_ocl2413.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/SDK/opencv_2.4.13.2/sources/modules/ocl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/SDK/opencv_2.4.13.2/sources -BE:/SDK/opencv_2.4.13.2/build_John_noGPU --check-stamp-file E:/SDK/opencv_2.4.13.2/build_John_noGPU/modules/ocl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/SDK/opencv_2.4.13.2/sources/modules/ocl/CMakeLists.txt;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\CMakeLists.txt;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/SDK/opencv_2.4.13.2/sources/modules/ocl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/SDK/opencv_2.4.13.2/sources -BE:/SDK/opencv_2.4.13.2/build_John_noGPU --check-stamp-file E:/SDK/opencv_2.4.13.2/build_John_noGPU/modules/ocl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/SDK/opencv_2.4.13.2/sources/modules/ocl/CMakeLists.txt;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\CMakeLists.txt;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\CMakeFiles\a9b644ed78ba39f085d29263850e48f3\opencl_kernels.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating opencl_kernels.cpp, opencl_kernels.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DCL_DIR="E:/SDK/opencv_2.4.13.2/sources/modules/ocl/src/opencl" -DOUTPUT="E:/SDK/opencv_2.4.13.2/build_John_noGPU/modules/ocl/opencl_kernels.cpp" -P E:/SDK/opencv_2.4.13.2/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/SDK/opencv_2.4.13.2/build_John_noGPU/CMakeFiles/a9b644ed78ba39f085d29263850e48f3/opencl_kernels.cpp.rule;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_LUT.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_absdiff_nonsaturate.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_add.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_addWeighted.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_add_mask.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_add_scalar.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_add_scalar_mask.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_bitwise.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_cartToPolar.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_compare.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_exp.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_flip.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_log.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_magnitude.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_minMax.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_minMaxLoc.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_minMaxLoc_mask.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_nonzero.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_phase.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_polarToCart.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_pow.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_setidentity.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_sum.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_transpose.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\bgfg_mog.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\blend_linear.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\brute_force_match.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\build_warps.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\convertC3C4.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\cvt_color.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filter_sep_col.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filter_sep_row.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filtering_adaptive_bilateral.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filtering_boxFilter.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filtering_filter2D.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filtering_morph.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filtering_sep_filter_singlepass.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\haarobjectdetect.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\haarobjectdetect_scaled2.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_bilateral.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_calcHarris.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_calcMinEigenVal.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_canny.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_clahe.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_columnsum.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_convolve.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_copymakeboder.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_gftt.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_histogram.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_integral.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_integral_sum.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_median.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_remap.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_resize.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_sobel3.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_threshold.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_warpAffine.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_warpPerspective.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\interpolate_frames.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\kernel_radix_sort_by_key.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\kernel_sort_by_key.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\kernel_stablesort_by_key.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\kmeans_kernel.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\knearest.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\match_template.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\meanShift.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\merge_mat.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\moments.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\objdetect_hog.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\operator_convertTo.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\operator_copyToM.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\operator_setTo.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\operator_setToM.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\optical_flow_farneback.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\pyr_down.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\pyr_up.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\pyrlk.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\split_mat.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\stereobm.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\stereobp.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\stereocsbp.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\svm.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\tvl1flow.cl;E:\SDK\opencv_2.4.13.2\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl\opencl_kernels.cpp;E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl\opencl_kernels.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating opencl_kernels.cpp, opencl_kernels.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DCL_DIR="E:/SDK/opencv_2.4.13.2/sources/modules/ocl/src/opencl" -DOUTPUT="E:/SDK/opencv_2.4.13.2/build_John_noGPU/modules/ocl/opencl_kernels.cpp" -P E:/SDK/opencv_2.4.13.2/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/SDK/opencv_2.4.13.2/build_John_noGPU/CMakeFiles/a9b644ed78ba39f085d29263850e48f3/opencl_kernels.cpp.rule;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_LUT.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_absdiff_nonsaturate.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_add.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_addWeighted.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_add_mask.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_add_scalar.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_add_scalar_mask.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_bitwise.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_cartToPolar.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_compare.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_exp.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_flip.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_log.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_magnitude.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_minMax.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_minMaxLoc.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_minMaxLoc_mask.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_nonzero.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_phase.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_polarToCart.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_pow.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_setidentity.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_sum.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_transpose.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\bgfg_mog.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\blend_linear.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\brute_force_match.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\build_warps.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\convertC3C4.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\cvt_color.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filter_sep_col.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filter_sep_row.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filtering_adaptive_bilateral.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filtering_boxFilter.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filtering_filter2D.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filtering_morph.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filtering_sep_filter_singlepass.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\haarobjectdetect.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\haarobjectdetect_scaled2.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_bilateral.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_calcHarris.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_calcMinEigenVal.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_canny.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_clahe.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_columnsum.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_convolve.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_copymakeboder.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_gftt.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_histogram.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_integral.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_integral_sum.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_median.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_remap.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_resize.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_sobel3.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_threshold.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_warpAffine.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_warpPerspective.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\interpolate_frames.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\kernel_radix_sort_by_key.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\kernel_sort_by_key.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\kernel_stablesort_by_key.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\kmeans_kernel.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\knearest.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\match_template.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\meanShift.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\merge_mat.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\moments.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\objdetect_hog.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\operator_convertTo.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\operator_copyToM.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\operator_setTo.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\operator_setToM.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\optical_flow_farneback.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\pyr_down.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\pyr_up.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\pyrlk.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\split_mat.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\stereobm.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\stereobp.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\stereocsbp.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\svm.cl;E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\tvl1flow.cl;E:\SDK\opencv_2.4.13.2\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl\opencl_kernels.cpp;E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl\opencl_kernels.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\include\opencv2\ocl\matrix_operations.hpp" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\include\opencv2\ocl\ocl.hpp" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl\opencl_kernels.hpp" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\cl_programcache.hpp" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\cl_runtime\cl_runtime_opencl_impl.hpp" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\precomp.hpp" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\safe_call.hpp" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\cvconfig.h" />
+    <ClInclude Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\opencv2\opencv_modules.hpp" />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\arithm.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\bgfg_mog.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\blend.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\brute_force_matcher.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\build_warps.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\canny.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\cl_context.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\cl_operations.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\cl_programcache.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\cl_runtime\cl_runtime.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\cl_runtime\clamdblas_runtime.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\cl_runtime\clamdfft_runtime.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\color.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\columnsum.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\error.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\fft.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\filtering.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\gemm.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\gftt.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\haar.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\hog.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\imgproc.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\interpolate_frames.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\kalman.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\kmeans.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\knearest.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\match_template.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\matrix_operations.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\mcwutil.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\moments.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\mssegmentation.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\optical_flow_farneback.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\pyrdown.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\pyrlk.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\pyrup.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\sort_by_key.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\split_merge.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\stereo_csbp.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\stereobm.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\stereobp.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\svm.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\tvl1flow.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl\opencl_kernels.cpp"  />
+    <ClCompile Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ocl\opencv_ocl_pch.cpp" >
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/SDK/opencv_2.4.13.2/sources/modules/ocl/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/SDK/opencv_2.4.13.2/sources/modules/ocl/src/precomp.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_LUT.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_absdiff_nonsaturate.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_add.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_addWeighted.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_add_mask.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_add_scalar.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_add_scalar_mask.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_bitwise.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_cartToPolar.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_compare.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_exp.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_flip.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_log.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_magnitude.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_minMax.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_minMaxLoc.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_minMaxLoc_mask.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_nonzero.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_phase.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_polarToCart.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_pow.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_setidentity.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_sum.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\arithm_transpose.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\bgfg_mog.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\blend_linear.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\brute_force_match.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\build_warps.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\convertC3C4.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\cvt_color.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filter_sep_col.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filter_sep_row.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filtering_adaptive_bilateral.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filtering_boxFilter.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filtering_filter2D.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filtering_morph.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\filtering_sep_filter_singlepass.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\haarobjectdetect.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\haarobjectdetect_scaled2.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_bilateral.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_calcHarris.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_calcMinEigenVal.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_canny.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_clahe.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_columnsum.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_convolve.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_copymakeboder.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_gftt.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_histogram.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_integral.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_integral_sum.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_median.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_remap.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_resize.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_sobel3.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_threshold.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_warpAffine.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\imgproc_warpPerspective.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\interpolate_frames.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\kernel_radix_sort_by_key.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\kernel_sort_by_key.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\kernel_stablesort_by_key.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\kmeans_kernel.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\knearest.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\match_template.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\meanShift.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\merge_mat.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\moments.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\objdetect_hog.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\operator_convertTo.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\operator_copyToM.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\operator_setTo.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\operator_setToM.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\optical_flow_farneback.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\pyr_down.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\pyr_up.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\pyrlk.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\split_mat.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\stereobm.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\stereobp.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\stereocsbp.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\svm.cl" />
+    <None Include="E:\SDK\opencv_2.4.13.2\sources\modules\ocl\src\opencl\tvl1flow.cl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\ZERO_CHECK.vcxproj">
+      <Project>34B73CEA-8A89-3D6B-BE55-8BC9F41E3886</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\calib3d\opencv_calib3d.vcxproj">
+      <Project>8F403C45-37D8-31DB-BB10-0CDE6CB9E654</Project>
+      <Name>opencv_calib3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\core\opencv_core.vcxproj">
+      <Project>97675405-ADDE-30D4-A00E-0F0D8083083D</Project>
+      <Name>opencv_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\features2d\opencv_features2d.vcxproj">
+      <Project>A4F54663-743A-3854-9DFD-74BF528E249E</Project>
+      <Name>opencv_features2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\flann\opencv_flann.vcxproj">
+      <Project>A262F513-673A-3AF3-9E38-B27328CF7D03</Project>
+      <Name>opencv_flann</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\highgui\opencv_highgui.vcxproj">
+      <Project>AA421B02-64C9-3666-8C8C-79452665C33D</Project>
+      <Name>opencv_highgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\imgproc\opencv_imgproc.vcxproj">
+      <Project>3986E7FC-0AA8-3672-BB73-9168DEAD526C</Project>
+      <Name>opencv_imgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\ml\opencv_ml.vcxproj">
+      <Project>B8253C30-92A4-3A58-9A78-B4C1135388D8</Project>
+      <Name>opencv_ml</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\objdetect\opencv_objdetect.vcxproj">
+      <Project>E5504047-7C8B-3240-BA9F-59203447F1A5</Project>
+      <Name>opencv_objdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\SDK\opencv_2.4.13.2\build_John_noGPU\modules\video\opencv_video.vcxproj">
+      <Project>B62849E9-302B-3182-BBA1-FE2597C538A7</Project>
+      <Name>opencv_video</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir_old=${prefix}/include/opencv
+includedir_new=${prefix}/include
+
+Name: OpenCV
+Description: Open Source Computer Vision Library
+Version: 2.4.13.2
+Libs: -L${exec_prefix}/lib -lopencv_contrib -lopencv_legacy -lopencv_ml -lopencv_stitching -lopencv_objdetect -lopencv_nonfree -lopencv_superres -lopencv_ts -lopencv_videostab -lopencv_video -lopencv_photo -lopencv_calib3d -lopencv_features2d -lopencv_highgui -L${exec_prefix}/share/OpenCV/3rdparty/lib -ljasper -ltiff -lpng -ljpeg -lopencv_imgproc -lopencv_flann -lopencv_core -lzlib -l-framework QuartzCore -l-framework CoreVideo -l-framework CoreMedia -l-framework CoreImage -l-framework CoreGraphics -l-framework AVFoundation -l-framework Accelerate -l-framework Cocoa -lstdc++
+Cflags: -I${includedir_old} -I${includedir_new}

@@ -1,0 +1,816 @@
+Build output check failed:
+    Regex: 'unknown .*option'
+    Output line: 'warning: unknown warning option '-Wno-aggressive-loop-optimizations' [-Wunknown-warning-option]'
+Compilation failed:
+    source file: '/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds  -Wno-aggressive-loop-optimizations'
+===== BUILD LOG =====
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec712479348/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec712479348.dir/build.make CMakeFiles/cmTryCompileExec712479348.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec712479348.dir/src.cxx.o
+/usr/bin/c++    -O3 -DNDEBUG   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -Wno-aggressive-loop-optimizations -o CMakeFiles/cmTryCompileExec712479348.dir/src.cxx.o -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-Wno-aggressive-loop-optimizations' [-Wunknown-warning-option]
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.cxx:1:8: warning: unknown pragma ignored [-Wunknown-pragmas]
+#pragma
+       ^
+2 warnings generated.
+Linking CXX executable cmTryCompileExec712479348
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec712479348.dir/link.txt --verbose=1
+/usr/bin/c++     -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec712479348.dir/src.cxx.o  -o cmTryCompileExec712479348  
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unknown .*option'
+    Output line: 'warning: unknown warning option '-Wno-aggressive-loop-optimizations' [-Wunknown-warning-option]'
+Compilation failed:
+    source file: '/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds  -Wno-aggressive-loop-optimizations'
+===== BUILD LOG =====
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1203864709/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1203864709.dir/build.make CMakeFiles/cmTryCompileExec1203864709.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1203864709.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -Wno-aggressive-loop-optimizations -o CMakeFiles/cmTryCompileExec1203864709.dir/src.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c
+warning: unknown warning option '-Wno-aggressive-loop-optimizations' [-Wunknown-warning-option]
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c:1:8: warning: unknown pragma ignored [-Wunknown-pragmas]
+#pragma
+       ^
+2 warnings generated.
+Linking C executable cmTryCompileExec1203864709
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1203864709.dir/link.txt --verbose=1
+/usr/bin/cc    -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec1203864709.dir/src.c.o  -o cmTryCompileExec1203864709  
+
+===== END =====
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec696295937/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec696295937.dir/build.make CMakeFiles/cmTryCompileExec696295937.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec696295937.dir/TestEndianess.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec696295937.dir/TestEndianess.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec696295937
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec696295937.dir/link.txt --verbose=1
+/usr/bin/cc     -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec696295937.dir/TestEndianess.c.o  -o cmTryCompileExec696295937  
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of off64_t failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1580653184/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1580653184.dir/build.make CMakeFiles/cmTryCompileExec1580653184.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1580653184.dir/OFF64_T.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec1580653184.dir/OFF64_T.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CheckTypeSize/OFF64_T.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CheckTypeSize/OFF64_T.c:19:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CheckTypeSize/OFF64_T.c:20:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CheckTypeSize/OFF64_T.c:21:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CheckTypeSize/OFF64_T.c:22:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CheckTypeSize/OFF64_T.c:23:12: error: use of undeclared identifier 'off64_t'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1580653184.dir/OFF64_T.c.o] Error 1
+make: *** [cmTryCompileExec1580653184/fast] Error 2
+
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Build output check failed:
+    Regex: 'unknown .*option'
+    Output line: 'warning: unknown warning option '-Wno-shift-negative-value', did you mean '-Wno-shift-sign-overflow'? [-Wunknown-warning-option]'
+Compilation failed:
+    source file: '/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-shift-negative-value'
+===== BUILD LOG =====
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2974274876/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2974274876.dir/build.make CMakeFiles/cmTryCompileExec2974274876.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2974274876.dir/src.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security    -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fPIC -Wno-shorten-64-to-32 -Wno-attributes -Wno-strict-prototypes -Wno-missing-prototypes -Wno-missing-declarations  -O3 -DNDEBUG   -Wno-shift-negative-value -o CMakeFiles/cmTryCompileExec2974274876.dir/src.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c
+warning: unknown warning option '-Wno-shift-negative-value'; did you mean '-Wno-shift-sign-overflow'? [-Wunknown-warning-option]
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c:1:8: warning: unknown pragma ignored [-Wunknown-pragmas]
+#pragma
+       ^
+2 warnings generated.
+Linking C executable cmTryCompileExec2974274876
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2974274876.dir/link.txt --verbose=1
+/usr/bin/cc     -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security    -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fPIC -Wno-shorten-64-to-32 -Wno-attributes -Wno-strict-prototypes -Wno-missing-prototypes -Wno-missing-declarations  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec2974274876.dir/src.c.o  -o cmTryCompileExec2974274876  
+
+===== END =====
+
+Determining if the include file io.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1902155706/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1902155706.dir/build.make CMakeFiles/cmTryCompileExec1902155706.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1902155706.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec1902155706.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'io.h' file not found
+#include <io.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1902155706.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec1902155706/fast] Error 2
+
+
+Determining if the function jbg_newlen exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec659474566/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec659474566.dir/build.make CMakeFiles/cmTryCompileExec659474566.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec659474566.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -DCHECK_FUNCTION_EXISTS=jbg_newlen -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec659474566.dir/CheckFunctionExists.c.o   -c /Applications/CMake.app/Contents/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec659474566
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec659474566.dir/link.txt --verbose=1
+/usr/bin/cc     -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -DCHECK_FUNCTION_EXISTS=jbg_newlen -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec659474566.dir/CheckFunctionExists.c.o  -o cmTryCompileExec659474566  
+Undefined symbols for architecture x86_64:
+  "_jbg_newlen", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTryCompileExec659474566] Error 1
+make: *** [cmTryCompileExec659474566/fast] Error 2
+
+
+Build output check failed:
+    Regex: 'unknown .*option'
+    Output line: 'warning: unknown warning option '-Wno-unused-but-set-variable', did you mean '-Wno-unused-const-variable'? [-Wunknown-warning-option]'
+Compilation failed:
+    source file: '/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-unused-but-set-variable'
+===== BUILD LOG =====
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2548860987/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2548860987.dir/build.make CMakeFiles/cmTryCompileExec2548860987.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2548860987.dir/src.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -Wno-unused-but-set-variable -o CMakeFiles/cmTryCompileExec2548860987.dir/src.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c
+warning: unknown warning option '-Wno-unused-but-set-variable'; did you mean '-Wno-unused-const-variable'? [-Wunknown-warning-option]
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c:1:8: warning: unknown pragma ignored [-Wunknown-pragmas]
+#pragma
+       ^
+2 warnings generated.
+Linking C executable cmTryCompileExec2548860987
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2548860987.dir/link.txt --verbose=1
+/usr/bin/cc     -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec2548860987.dir/src.c.o  -o cmTryCompileExec2548860987  
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unknown .*option'
+    Output line: 'warning: unknown warning option '-Wno-maybe-uninitialized', did you mean '-Wno-uninitialized'? [-Wunknown-warning-option]'
+Compilation failed:
+    source file: '/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-maybe-uninitialized'
+===== BUILD LOG =====
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1494260853/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1494260853.dir/build.make CMakeFiles/cmTryCompileExec1494260853.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1494260853.dir/src.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Wstrict-prototypes  -Winit-self -Wpointer-arith  -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -Wno-missing-prototypes -Wno-missing-declarations -Wno-undef -Wno-unused -Wno-sign-compare -Wno-cast-align -Wno-shadow  -O3 -DNDEBUG   -Wno-maybe-uninitialized -o CMakeFiles/cmTryCompileExec1494260853.dir/src.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c
+warning: unknown warning option '-Wno-maybe-uninitialized'; did you mean '-Wno-uninitialized'? [-Wunknown-warning-option]
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c:1:8: warning: unknown pragma ignored [-Wunknown-pragmas]
+#pragma
+       ^
+2 warnings generated.
+Linking C executable cmTryCompileExec1494260853
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1494260853.dir/link.txt --verbose=1
+/usr/bin/cc     -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Wstrict-prototypes  -Winit-self -Wpointer-arith  -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -Wno-missing-prototypes -Wno-missing-declarations -Wno-undef -Wno-unused -Wno-sign-compare -Wno-cast-align -Wno-shadow  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec1494260853.dir/src.c.o  -o cmTryCompileExec1494260853  
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unknown .*option'
+    Output line: 'warning: unknown warning option '-Wno-misleading-indentation', did you mean '-Wno-missing-declarations'? [-Wunknown-warning-option]'
+Compilation failed:
+    source file: '/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-misleading-indentation'
+===== BUILD LOG =====
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4117208201/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec4117208201.dir/build.make CMakeFiles/cmTryCompileExec4117208201.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4117208201.dir/src.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Wstrict-prototypes  -Winit-self -Wpointer-arith  -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -Wno-missing-prototypes -Wno-missing-declarations -Wno-undef -Wno-unused -Wno-sign-compare -Wno-cast-align -Wno-shadow -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast  -O3 -DNDEBUG   -Wno-misleading-indentation -o CMakeFiles/cmTryCompileExec4117208201.dir/src.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c
+warning: unknown warning option '-Wno-misleading-indentation'; did you mean '-Wno-missing-declarations'? [-Wunknown-warning-option]
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c:1:8: warning: unknown pragma ignored [-Wunknown-pragmas]
+#pragma
+       ^
+2 warnings generated.
+Linking C executable cmTryCompileExec4117208201
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4117208201.dir/link.txt --verbose=1
+/usr/bin/cc     -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Wstrict-prototypes  -Winit-self -Wpointer-arith  -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -Wno-missing-prototypes -Wno-missing-declarations -Wno-undef -Wno-unused -Wno-sign-compare -Wno-cast-align -Wno-shadow -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec4117208201.dir/src.c.o  -o cmTryCompileExec4117208201  
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unknown .*option'
+    Output line: 'warning: unknown warning option '-Wno-unused-but-set-parameter', did you mean '-Wno-unused-parameter'? [-Wunknown-warning-option]'
+Compilation failed:
+    source file: '/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-unused-but-set-parameter'
+===== BUILD LOG =====
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec649121123/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec649121123.dir/build.make CMakeFiles/cmTryCompileExec649121123.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec649121123.dir/src.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations  -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -Wno-implicit-function-declaration -Wno-uninitialized -Wno-missing-prototypes  -O3 -DNDEBUG   -Wno-unused-but-set-parameter -o CMakeFiles/cmTryCompileExec649121123.dir/src.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c
+warning: unknown warning option '-Wno-unused-but-set-parameter'; did you mean '-Wno-unused-parameter'? [-Wunknown-warning-option]
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.c:1:8: warning: unknown pragma ignored [-Wunknown-pragmas]
+#pragma
+       ^
+2 warnings generated.
+Linking C executable cmTryCompileExec649121123
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec649121123.dir/link.txt --verbose=1
+/usr/bin/cc     -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations  -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -Wno-implicit-function-declaration -Wno-uninitialized -Wno-missing-prototypes  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec649121123.dir/src.c.o  -o cmTryCompileExec649121123  
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unknown .*option'
+    Output line: 'warning: unknown warning option '-Wno-misleading-indentation', did you mean '-Wno-missing-declarations'? [-Wunknown-warning-option]'
+Compilation failed:
+    source file: '/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-misleading-indentation'
+===== BUILD LOG =====
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec571889869/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec571889869.dir/build.make CMakeFiles/cmTryCompileExec571889869.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec571889869.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security  -Wmissing-prototypes -Wstrict-prototypes  -Winit-self -Wpointer-arith  -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations  -O3 -DNDEBUG   -Wno-misleading-indentation -o CMakeFiles/cmTryCompileExec571889869.dir/src.cxx.o -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-Wno-misleading-indentation'; did you mean '-Wno-missing-declarations'? [-Wunknown-warning-option]
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.cxx:1:8: warning: unknown pragma ignored [-Wunknown-pragmas]
+#pragma
+       ^
+2 warnings generated.
+Linking CXX executable cmTryCompileExec571889869
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec571889869.dir/link.txt --verbose=1
+/usr/bin/c++      -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security  -Wmissing-prototypes -Wstrict-prototypes  -Winit-self -Wpointer-arith  -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec571889869.dir/src.cxx.o  -o cmTryCompileExec571889869  
+
+===== END =====
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2422644356/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2422644356.dir/build.make CMakeFiles/cmTryCompileExec2422644356.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2422644356.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec2422644356.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev.h' file not found
+#include <linux/videodev.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2422644356.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2422644356/fast] Error 2
+
+
+Determining if the include file linux/videodev2.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2721381741/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2721381741.dir/build.make CMakeFiles/cmTryCompileExec2721381741.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2721381741.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec2721381741.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev2.h' file not found
+#include <linux/videodev2.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2721381741.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2721381741/fast] Error 2
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1047366900/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1047366900.dir/build.make CMakeFiles/cmTryCompileExec1047366900.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1047366900.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec1047366900.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/videoio.h' file not found
+#include <sys/videoio.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1047366900.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec1047366900/fast] Error 2
+
+
+Build output check failed:
+    Regex: 'unknown .*option'
+    Output line: 'warning: unknown warning option '-Wno-clobbered', did you mean '-Wno-consumed'? [-Wunknown-warning-option]'
+Compilation failed:
+    source file: '/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-clobbered'
+===== BUILD LOG =====
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2553361735/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2553361735.dir/build.make CMakeFiles/cmTryCompileExec2553361735.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2553361735.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -Wno-deprecated-declarations  -O3 -DNDEBUG   -Wno-clobbered -o CMakeFiles/cmTryCompileExec2553361735.dir/src.cxx.o -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-Wno-clobbered'; did you mean '-Wno-consumed'? [-Wunknown-warning-option]
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/src.cxx:1:8: warning: unknown pragma ignored [-Wunknown-pragmas]
+#pragma
+       ^
+2 warnings generated.
+Linking CXX executable cmTryCompileExec2553361735
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2553361735.dir/link.txt --verbose=1
+/usr/bin/c++      -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -Wno-deprecated-declarations  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec2553361735.dir/src.cxx.o  -o cmTryCompileExec2553361735  
+
+===== END =====
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec300399874/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec300399874.dir/build.make CMakeFiles/cmTryCompileExec300399874.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec300399874.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec300399874.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev.h' file not found
+#include <linux/videodev.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec300399874.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec300399874/fast] Error 2
+
+
+Determining if the include file linux/videodev2.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1846717571/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1846717571.dir/build.make CMakeFiles/cmTryCompileExec1846717571.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1846717571.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec1846717571.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev2.h' file not found
+#include <linux/videodev2.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1846717571.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec1846717571/fast] Error 2
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2069012558/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2069012558.dir/build.make CMakeFiles/cmTryCompileExec2069012558.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2069012558.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec2069012558.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/videoio.h' file not found
+#include <sys/videoio.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2069012558.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2069012558/fast] Error 2
+
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4067419910/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec4067419910.dir/build.make CMakeFiles/cmTryCompileExec4067419910.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4067419910.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec4067419910.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev.h' file not found
+#include <linux/videodev.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec4067419910.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec4067419910/fast] Error 2
+
+
+Determining if the include file linux/videodev2.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3359066286/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3359066286.dir/build.make CMakeFiles/cmTryCompileExec3359066286.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3359066286.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec3359066286.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev2.h' file not found
+#include <linux/videodev2.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3359066286.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec3359066286/fast] Error 2
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2963327343/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2963327343.dir/build.make CMakeFiles/cmTryCompileExec2963327343.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2963327343.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec2963327343.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/videoio.h' file not found
+#include <sys/videoio.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2963327343.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2963327343/fast] Error 2
+
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1488214610/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1488214610.dir/build.make CMakeFiles/cmTryCompileExec1488214610.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1488214610.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec1488214610.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev.h' file not found
+#include <linux/videodev.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1488214610.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec1488214610/fast] Error 2
+
+
+Determining if the include file linux/videodev2.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2202084723/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2202084723.dir/build.make CMakeFiles/cmTryCompileExec2202084723.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2202084723.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec2202084723.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev2.h' file not found
+#include <linux/videodev2.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2202084723.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2202084723/fast] Error 2
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2297737880/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2297737880.dir/build.make CMakeFiles/cmTryCompileExec2297737880.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2297737880.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec2297737880.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/videoio.h' file not found
+#include <sys/videoio.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2297737880.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2297737880/fast] Error 2
+
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3480210260/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3480210260.dir/build.make CMakeFiles/cmTryCompileExec3480210260.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3480210260.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec3480210260.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev.h' file not found
+#include <linux/videodev.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3480210260.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec3480210260/fast] Error 2
+
+
+Determining if the include file linux/videodev2.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec729872920/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec729872920.dir/build.make CMakeFiles/cmTryCompileExec729872920.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec729872920.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec729872920.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev2.h' file not found
+#include <linux/videodev2.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec729872920.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec729872920/fast] Error 2
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2631661473/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2631661473.dir/build.make CMakeFiles/cmTryCompileExec2631661473.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2631661473.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec2631661473.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/videoio.h' file not found
+#include <sys/videoio.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2631661473.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2631661473/fast] Error 2
+
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2904814140/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2904814140.dir/build.make CMakeFiles/cmTryCompileExec2904814140.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2904814140.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec2904814140.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev.h' file not found
+#include <linux/videodev.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2904814140.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2904814140/fast] Error 2
+
+
+Determining if the include file linux/videodev2.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4038747431/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec4038747431.dir/build.make CMakeFiles/cmTryCompileExec4038747431.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4038747431.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec4038747431.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev2.h' file not found
+#include <linux/videodev2.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec4038747431.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec4038747431/fast] Error 2
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4286571777/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec4286571777.dir/build.make CMakeFiles/cmTryCompileExec4286571777.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4286571777.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec4286571777.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/videoio.h' file not found
+#include <sys/videoio.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec4286571777.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec4286571777/fast] Error 2
+
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1444887887/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1444887887.dir/build.make CMakeFiles/cmTryCompileExec1444887887.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1444887887.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec1444887887.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev.h' file not found
+#include <linux/videodev.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1444887887.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec1444887887/fast] Error 2
+
+
+Determining if the include file linux/videodev2.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec418346075/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec418346075.dir/build.make CMakeFiles/cmTryCompileExec418346075.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec418346075.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec418346075.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev2.h' file not found
+#include <linux/videodev2.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec418346075.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec418346075/fast] Error 2
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1627939430/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1627939430.dir/build.make CMakeFiles/cmTryCompileExec1627939430.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1627939430.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec1627939430.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/videoio.h' file not found
+#include <sys/videoio.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1627939430.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec1627939430/fast] Error 2
+
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3538704125/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3538704125.dir/build.make CMakeFiles/cmTryCompileExec3538704125.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3538704125.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec3538704125.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev.h' file not found
+#include <linux/videodev.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3538704125.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec3538704125/fast] Error 2
+
+
+Determining if the include file linux/videodev2.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3228794179/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3228794179.dir/build.make CMakeFiles/cmTryCompileExec3228794179.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3228794179.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec3228794179.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev2.h' file not found
+#include <linux/videodev2.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3228794179.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec3228794179/fast] Error 2
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2860487373/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2860487373.dir/build.make CMakeFiles/cmTryCompileExec2860487373.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2860487373.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec2860487373.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/videoio.h' file not found
+#include <sys/videoio.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2860487373.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2860487373/fast] Error 2
+
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2102344086/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2102344086.dir/build.make CMakeFiles/cmTryCompileExec2102344086.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2102344086.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec2102344086.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev.h' file not found
+#include <linux/videodev.h>
+         ^
+1 error generated.
+make[2]: *** [CMakeFiles/cmTryCompileExec2102344086.dir/CheckIncludeFile.c.o] Error 1
+make[1]: *** [cmTryCompileExec2102344086/fast] Error 2
+
+
+Determining if the include file linux/videodev2.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2663762037/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2663762037.dir/build.make CMakeFiles/cmTryCompileExec2663762037.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2663762037.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec2663762037.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev2.h' file not found
+#include <linux/videodev2.h>
+         ^
+1 error generated.
+make[2]: *** [CMakeFiles/cmTryCompileExec2663762037.dir/CheckIncludeFile.c.o] Error 1
+make[1]: *** [cmTryCompileExec2663762037/fast] Error 2
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec201998980/fast"
+/Applications/Xcode_7.2.1.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec201998980.dir/build.make CMakeFiles/cmTryCompileExec201998980.dir/build
+/Applications/CMake.app/Contents/bin/cmake -E cmake_progress_report /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec201998980.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG -arch x86_64 -isysroot /Applications/Xcode_7.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -mmacosx-version-min=10.10   -o CMakeFiles/cmTryCompileExec201998980.dir/CheckIncludeFile.c.o   -c /Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Data/opencv_2.4.13.2/build_John_unix_static/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/videoio.h' file not found
+#include <sys/videoio.h>
+         ^
+1 error generated.
+make[2]: *** [CMakeFiles/cmTryCompileExec201998980.dir/CheckIncludeFile.c.o] Error 1
+make[1]: *** [cmTryCompileExec201998980/fast] Error 2
+
+
