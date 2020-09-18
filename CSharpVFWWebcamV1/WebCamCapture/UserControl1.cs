@@ -118,8 +118,8 @@ namespace WebCamCapture
 
                 this.Stop();
 
-                m_CapHwnd = capCreateCaptureWindowA("WebCap", 0, 0, 0, m_Width, m_Height, this.Handle.ToInt32(), 0);
-
+                //m_CapHwnd = capCreateCaptureWindowA("WebCap", 0, 0, 0, m_Width, m_Height, this.Handle.ToInt32(), 0);
+                m_CapHwnd = capCreateCaptureWindowA("WebCap", 0, 0, 0, 1920, 1080, this.Handle.ToInt32(), 0);
                 Application.DoEvents();
 
                 SendMessage(m_CapHwnd, WM_CAP_CONNECT, 0, 0);
@@ -150,7 +150,7 @@ namespace WebCamCapture
 
                 OpenClipboard(m_CapHwnd);
 
-                IntPtr img = GetClipboardData(2);
+                IntPtr img = GetClipboardData(2); // #define CF_BITMAP 2
 
                 CloseClipboard();
 

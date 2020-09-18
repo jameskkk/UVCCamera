@@ -67,7 +67,7 @@
             this.userControl11.Location = new System.Drawing.Point(16, 14);
             this.userControl11.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(481, 290);
+            this.userControl11.Size = new System.Drawing.Size(480, 300);
             this.userControl11.TabIndex = 0;
             // 
             // frmWebCam
