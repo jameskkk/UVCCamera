@@ -32,10 +32,16 @@ HEADERS += \
 
 INCLUDEPATH += ../opencv_2.4.13.2/build_John_noGPU/include
 
+CONFIG(debug, debug|release) {
+    LIBS += D:/SDK/opencv_2.4.13.2/build/x64/vc14/lib/opencv_highgui2413d.lib \
+            D:/SDK/opencv_2.4.13.2/build/x64/vc14/lib/opencv_imgproc2413d.lib \
+            D:/SDK/opencv_2.4.13.2/build/x64/vc14/lib/opencv_core2413d.lib
+} else {
+    LIBS += ../opencv_2.4.13.2/build_John_noGPU/lib/Release/opencv_highgui2413.lib \
+            ../opencv_2.4.13.2/build_John_noGPU/lib/Release/opencv_imgproc2413.lib \
+            ../opencv_2.4.13.2/build_John_noGPU/lib/Release/opencv_core2413.lib
+}
 
-LIBS += ../opencv_2.4.13.2/build_John_noGPU/lib/Release/opencv_highgui2413.lib \
-        ../opencv_2.4.13.2/build_John_noGPU/lib/Release/opencv_imgproc2413.lib \
-        ../opencv_2.4.13.2/build_John_noGPU/lib/Release/opencv_core2413.lib
 
 FORMS += \
         mainwindow.ui

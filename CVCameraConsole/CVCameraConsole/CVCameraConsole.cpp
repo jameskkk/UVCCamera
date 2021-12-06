@@ -1,0 +1,61 @@
+// CVCamera.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <opencv2/opencv.hpp>
+#include <opencv2/core/utils/logger.hpp>
+
+using namespace std;
+using namespace cv;
+
+int main() {
+	cv::utils::logging::setLogLevel(utils::logging::LOG_LEVEL_VERBOSE); // Open OpenCV Debug log
+
+	VideoCapture cap(1);
+	if (!cap.isOpened()) {
+		cout << "Cannot open camera\n";
+		return 1;
+	}
+
+	Mat frame;
+	Mat gray;
+	cap.set(CV_CAP_PROP_FRAME_WIDTH, 160);
+	cap.set(CV_CAP_PROP_FRAME_HEIGHT, 120);
+	cap.set(CV_CAP_PROP_CONVERT_RGB, 0);
+	int value = cap.get(CV_CAP_PROP_CONVERT_RGB);
+	cout << "CV_CAP_PROP_CONVERT_RGB = " << value << endl;
+
+	//namedWindow("live", WINDOW_AUTOSIZE); // 命名一個視窗，可不寫
+	while (true) {
+		// 擷取影像
+		bool ret = cap.read(frame); // or cap >> frame;
+		if (!ret) {
+			cout << "Can't receive frame (stream end?). Exiting ...\n";
+			break;
+		}
+
+		if (cap.get(CV_CAP_PROP_CONVERT_RGB) == 1) {
+			Mat imageDecode = imdecode(frame, IMREAD_COLOR);
+			imshow("live Decode", frame);
+		}
+		else {
+			// 彩色轉灰階
+			cvtColor(frame, gray, COLOR_BGR2GRAY);
+			// 顯示圖片
+			imshow("live Color", frame);
+			imshow("live Gray", gray);
+		}
+
+		// 按下 q 鍵離開迴圈
+		if (waitKey(1) == 'q') {
+			break;
+		}
+	}
+
+	// VideoCapture 會自動在解構子裡釋放資源
+	cap.release();
+	destroyAllWindows();
+
+	return 0;
+}
+

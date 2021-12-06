@@ -12,12 +12,15 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->comboBoxCam->insertItem(1, tr("1"));
     ui->comboBoxCam->insertItem(2, tr("2"));
     ui->comboBoxCam->insertItem(3, tr("3"));
+    ui->comboBoxCam->insertItem(4, tr("4"));
 
-    ui->comboBoxResolution->insertItem(0, tr("640x480"));
-    ui->comboBoxResolution->insertItem(1, tr("1920x1080"));
-    ui->comboBoxResolution->insertItem(2, tr("2592x1944"));
+    ui->comboBoxResolution->insertItem(0, tr("160x120"));
+    ui->comboBoxResolution->insertItem(1, tr("320x240"));
+    ui->comboBoxResolution->insertItem(2, tr("640x480"));
+    ui->comboBoxResolution->insertItem(3, tr("1920x1080"));
+    ui->comboBoxResolution->insertItem(4, tr("2592x1944"));
 
-    cam     = NULL;
+    cam     = nullptr;
     timer   = new QTimer(this);
     imag    = new QImage();
 
@@ -31,13 +34,13 @@ MainWindow::~MainWindow()
 {
     closeCamara();
 
-    if (timer != NULL) {
+    if (timer != nullptr) {
         delete timer;
-        timer = NULL;
+        timer = nullptr;
     }
-    if (imag != NULL) {
+    if (imag != nullptr) {
         delete imag;
-        imag = NULL;
+        imag = nullptr;
     }
 
     delete ui;
@@ -68,16 +71,24 @@ void MainWindow::openCamara()
     cam = cvCreateCameraCapture(cameraId);
     switch (ui->comboBoxResolution->currentIndex()) {
     case 1:
+        cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_WIDTH, 320);
+        cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_HEIGHT, 240);
+        break;
+    case 2:
+        cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_WIDTH, 640);
+        cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_HEIGHT, 480);
+        break;
+    case 3:
         cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_WIDTH, 1920);
         cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_HEIGHT, 1080);
         break;
-    case 2:
+    case 4:
         cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_WIDTH, 2592);
         cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_HEIGHT, 1944);
         break;
     default:
-        cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_WIDTH, 640);
-        cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_HEIGHT, 480);
+        cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_WIDTH, 120);
+        cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_HEIGHT, 160);
         break;
     }
 
@@ -88,7 +99,7 @@ void MainWindow::openCamara()
 void MainWindow::readFarme()
 {
     frame = cvQueryFrame(cam);
-    if (frame != NULL) {
+    if (frame != nullptr) {
         IplImage *buffer = cvCreateImage(cvGetSize(frame), 8, 3);
 
         cvCvtColor(frame, buffer, CV_BGR2RGB);
@@ -136,9 +147,9 @@ void MainWindow::takingPictures()
 
 void MainWindow::closeCamara()
 {
-    if (timer != NULL)
+    if (timer != nullptr)
         timer->stop();
 
-    if (cam != NULL)
+    if (cam != nullptr)
         cvReleaseCapture(&cam);
 }

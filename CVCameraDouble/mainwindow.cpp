@@ -204,8 +204,8 @@ void MainWindow::openCamara()
 //        cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_HEIGHT, 480);
         break;
     default:
-        cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_WIDTH, 640);
-        cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_HEIGHT, 480);
+        cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_WIDTH, 160);
+        cvSetCaptureProperty(cam, CV_CAP_PROP_FRAME_HEIGHT, 120);
         break;
     }
 
