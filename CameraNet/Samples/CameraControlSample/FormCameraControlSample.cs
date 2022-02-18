@@ -118,6 +118,11 @@ namespace CameraControlSample
                 }
             }
 
+            if (resolutions.Count == 0)
+            {
+                comboBoxResolutionList.Items.Add("160x120");
+            }
+
             // select current resolution
             if (index_to_select >= 0)
             {

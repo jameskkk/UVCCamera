@@ -638,6 +638,11 @@ namespace CameraControlTool
             if (resolutions == null)
                 return; 
 
+            if (resolutions.Count == 0)
+            {
+                resolutions.Add(new Resolution(160, 120));
+            }
+
             if (comboBoxResolutionIndex >= resolutions.Count)
                 return; // throw
 
@@ -675,6 +680,12 @@ namespace CameraControlTool
                 {
                     index_to_select = index;
                 }
+            }
+
+            if (resolutions.Count == 0)
+            {
+                comboBoxResolutionList.Items.Add("160x120");
+                index_to_select = 0;
             }
 
             // select current resolution
